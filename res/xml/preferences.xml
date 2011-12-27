@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="Preferences">
+                <CheckBoxPreference
+                        android:title="Backup on save"
+                        android:defaultValue="true"
+                        android:summary="Make a backup of the memory card when saving."
+                        android:key="backupPref" />   
+                <CheckBoxPreference
+                        android:title="Convert on save"
+                        android:defaultValue="true"
+                        android:summary="Convert to preferred format on save. DexDrive format(.gme) ignores this setting and always converts to preferred type."
+                        android:key="convertPref" />
+                <ListPreference
+                        android:title="Preferred format"
+                        android:summary="Select the preferrred conversion format."
+                        android:key="formatPref"
+                        android:defaultValue="0"
+                        android:entries="@array/listFormat"
+                        android:entryValues="@array/listFormatVal" />                
+        </PreferenceCategory>		
+</PreferenceScreen>

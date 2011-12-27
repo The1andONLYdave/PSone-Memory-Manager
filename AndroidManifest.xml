@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.neko68k.psxmc"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	
+    <application android:icon="@drawable/memcard" android:label="@string/app_name">    	
+        <activity android:name="com.tutorials.hellotabwidget.MCTabsWidget"
+                  android:label="@string/app_name"                  
+                  android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tutorials.hellotabwidget.Card1Activity"  android:label="@string/app_name"
+            android:screenOrientation="landscape"/> 
+    	<activity android:name="com.tutorials.hellotabwidget.Card2Activity"  android:label="@string/app_name"
+    	    android:screenOrientation="landscape"/>  
+    	<activity android:name="com.tutorials.hellotabwidget.FileBrowser" android:label="@string/app_name"
+    	    android:screenOrientation="landscape"/>
+    	<activity android:name="com.tutorials.hellotabwidget.MCViewActivity"
+    	    android:screenOrientation="landscape">
+    	    <intent-filter>
+            <action android:name="com.tutorials.hellotabwidget.COPYMC"></action>
+        	</intent-filter>
+    	</activity>
+    	    
+    	<activity android:name="com.tutorials.hellotabwidget.MCViewActivityTab2"
+    	    android:screenOrientation="landscape"/>
+    	  	<activity android:name="com.tutorials.hellotabwidget.Prefs" android:screenOrientation="landscape"/>
+    	  	<activity android:name="com.tutorials.hellotabwidget.EditHeader" android:screenOrientation="landscape"/>
+    </application>
+</manifest>
