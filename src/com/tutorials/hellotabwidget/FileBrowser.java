@@ -63,7 +63,8 @@ public class FileBrowser extends ListActivity {
          * root-directory of the file-system.
          */
         private void browseToRoot() {
-                browseTo(Environment.getExternalStorageDirectory());
+                //browseTo(Environment.getExternalStorageDirectory());
+        	browseTo(new File("/mnt"));
     }
        
         /**
@@ -102,10 +103,10 @@ public class FileBrowser extends ListActivity {
                         // TODO Auto-generated catch block
                         e1.printStackTrace();
                 }
-                this.directoryEntries.add(".");
+                //this.directoryEntries.add(".");
                
-                if(this.currentDirectory.getParent() != null)
-                        this.directoryEntries.add("..");
+               // if(this.currentDirectory.getParent() != null)
+                //        this.directoryEntries.add("..");
                
                 switch(this.displayMode){
                         case ABSOLUTE:
@@ -125,11 +126,14 @@ public class FileBrowser extends ListActivity {
                                 	else
                                 	{      
                                 		if(!dirpick){
+                                			
 	                                		int extOfs = file.getName().lastIndexOf(".");
-	                                		String ext = file.getName().substring(extOfs, file.getName().length());          
-	                                		if(ext.contentEquals(".mcd")||ext.contentEquals(".MCD")||ext.contentEquals(".mcr")||ext.contentEquals(".MCR")||
-	                                				ext.contentEquals(".GME")||ext.contentEquals(".gme")){
-	                                			this.directoryEntries.add(file.getAbsolutePath().substring(currentPathStringLenght));
+	                                		if(extOfs != 0){
+		                                		String ext = file.getName().substring(extOfs, file.getName().length());          
+		                                		if(ext.contentEquals(".mcd")||ext.contentEquals(".MCD")||ext.contentEquals(".mcr")||ext.contentEquals(".MCR")||
+		                                				ext.contentEquals(".GME")||ext.contentEquals(".gme")){
+		                                			this.directoryEntries.add(file.getAbsolutePath().substring(currentPathStringLenght));
+		                                		}
 	                                		}
                                 		}
                                 	}
@@ -142,7 +146,17 @@ public class FileBrowser extends ListActivity {
                                 R.layout.file_row, this.directoryEntries);
                
                 this.setListAdapter(directoryList);
-        }     
+        }    
+        
+        @Override
+        public void onBackPressed() {    
+        	if(this.currentDirectory.getAbsolutePath().contentEquals("/mnt")){
+        		setResult(RESULT_CANCELED);
+        		finish();
+        	}
+        	else
+        		upOneLevel();
+        }
                 
         protected void onListItemLongClick(ListView l, View v, int position, long id){
         	        	
