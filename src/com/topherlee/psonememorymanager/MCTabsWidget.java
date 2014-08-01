@@ -1,4 +1,4 @@
-package com.tutorials.hellotabwidget;
+package com.topherlee.psonememorymanager;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -46,7 +46,7 @@ public class MCTabsWidget extends TabActivity {
 	    	   
 	    
 	    intent = new Intent().setClass(this, MCViewActivity.class);
-		intent.putExtra("com.tutorials.hellotabwidget.FN", "No MC");
+		intent.putExtra("com.topherlee.psonememorymanager.FN", "No MC");
 		intent.putExtra("tabid", 0);
 		tab = tabHost.newTabSpec("card"+totalTabs).setIndicator("No MC",
 	              res.getDrawable(R.drawable.memcard));
@@ -55,7 +55,7 @@ public class MCTabsWidget extends TabActivity {
 		tabHost.addTab(tab);
 		tabHost.setCurrentTab(0);
 		intent = new Intent().setClass(this, MCViewActivity.class);
-		intent.putExtra("com.tutorials.hellotabwidget.FN", "No MC");
+		intent.putExtra("com.topherlee.psonememorymanager.FN", "No MC");
 		intent.putExtra("tabid", 1);
 		tab = tabHost.newTabSpec("card"+totalTabs).setIndicator("No MC",
 	              res.getDrawable(R.drawable.memcard));
@@ -97,9 +97,9 @@ public class MCTabsWidget extends TabActivity {
 					tablist.remove(curTab);
 					tabHost.setCurrentTab(0);
 					tabHost.clearAllTabs();
-					passedFN = data.getStringExtra("com.tutorials.hellotabwidget.FN");    			
+					passedFN = data.getStringExtra("com.topherlee.psonememorymanager.FN");    			
 					intent = new Intent().setClass(this, MCViewActivity.class);
-					intent.putExtra("com.tutorials.hellotabwidget.FN", passedFN);
+					intent.putExtra("com.topherlee.psonememorymanager.FN", passedFN);
 					intent.putExtra("tabid", curTab);
 					totalTabs++;
 					tab1 = tabHost.newTabSpec("card"+(curTab)+totalTabs).setIndicator(passedFN,
@@ -120,7 +120,7 @@ public class MCTabsWidget extends TabActivity {
 	    	// new card
 	    	if(requestCode == 65534){
 	    		
-	    		//String fn = data.getStringExtra("com.tutorials.hellotabwidget.FN");
+	    		//String fn = data.getStringExtra("com.topherlee.psonememorymanager.FN");
 	    		intent = data;
 	    		final AlertDialog.Builder alert = new AlertDialog.Builder(this);
 	    		final EditText input = new EditText(this);
@@ -129,7 +129,7 @@ public class MCTabsWidget extends TabActivity {
 	    		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 	    			public void onClick(DialogInterface dialog, int whichButton) {
 	    				String value = input.getText().toString().trim();
-	    				String fn = intent.getStringExtra("com.tutorials.hellotabwidget.FN");
+	    				String fn = intent.getStringExtra("com.topherlee.psonememorymanager.FN");
 	    	    		if(fn!=null){
 	    	    			try {
 	    	    					File outFile = new File(fn+"/"+value+".mcd");
@@ -153,7 +153,7 @@ public class MCTabsWidget extends TabActivity {
     	    						tabHost.clearAllTabs();
     	    						passedFN = fn+"/"+value+".mcd";  			
     	    						intent = new Intent().setClass(getApplicationContext(), MCViewActivity.class);
-    	    						intent.putExtra("com.tutorials.hellotabwidget.FN", passedFN);
+    	    						intent.putExtra("com.topherlee.psonememorymanager.FN", passedFN);
     	    						intent.putExtra("tabid", curTab);
     	    						totalTabs++;
     	    						tab1 = tabHost.newTabSpec("card"+(curTab)+totalTabs).setIndicator(passedFN,

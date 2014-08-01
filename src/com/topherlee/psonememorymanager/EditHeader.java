@@ -1,4 +1,4 @@
-package com.tutorials.hellotabwidget;
+package com.topherlee.psonememorymanager;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.tutorials.hellotabwidget;
+package com.topherlee.psonememorymanager;
 
 import com.neko68k.psxmc.R;
 

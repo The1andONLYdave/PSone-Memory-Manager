@@ -1,4 +1,4 @@
-package com.tutorials.hellotabwidget;
+package com.topherlee.psonememorymanager;
 
 import android.graphics.Bitmap;
 import android.widget.TextView;

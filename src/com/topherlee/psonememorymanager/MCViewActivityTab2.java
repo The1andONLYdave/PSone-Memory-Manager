@@ -1,4 +1,4 @@
-package com.tutorials.hellotabwidget;
+package com.topherlee.psonememorymanager;
 
 import java.io.File;
 
@@ -16,7 +16,7 @@ public class MCViewActivityTab2 extends ListActivity{
 	public void onCreate(Bundle savedInstanceState) {
 		String fn = new String();
 		Intent intent = getIntent();
-		fn = intent.getStringExtra("com.tutorials.hellotabwidget.FN");		
+		fn = intent.getStringExtra("com.topherlee.psonememorymanager.FN");		
         super.onCreate(savedInstanceState);        
         final ListView lv = getListView();
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

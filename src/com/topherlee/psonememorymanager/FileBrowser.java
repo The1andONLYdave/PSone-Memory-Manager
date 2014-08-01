@@ -1,4 +1,4 @@
-package com.tutorials.hellotabwidget;
+package com.topherlee.psonememorymanager;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -84,7 +84,7 @@ public class FileBrowser extends ListActivity {
                 	if(!dirpick){
 	                	Intent i = new Intent();
 	                	String fn = new String(aDirectory.getAbsolutePath());
-	                	i.putExtra("com.tutorials.hellotabwidget.FN", fn);
+	                	i.putExtra("com.topherlee.psonememorymanager.FN", fn);
 	                	//startActivity(i);
 	                	setResult(RESULT_OK, i);                	
 	                	finish();
@@ -178,7 +178,7 @@ public class FileBrowser extends ListActivity {
                 }
                 if(clickedFile!=null&&clickedFile.isDirectory()){
                 	fn = clickedFile.getAbsolutePath();
-                	Intent i = new Intent().putExtra("com.tutorials.hellotabwidget.FN", fn);
+                	Intent i = new Intent().putExtra("com.topherlee.psonememorymanager.FN", fn);
                 	i.putExtra("savenum", savenum);
                 	//startActivity(i);
                 	setResult(RESULT_OK, i);                	

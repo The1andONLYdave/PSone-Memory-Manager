@@ -1,4 +1,4 @@
-package com.tutorials.hellotabwidget;
+package com.topherlee.psonememorymanager;
 
 import java.io.DataOutputStream;
 import java.io.File;
@@ -38,7 +38,7 @@ public class MCViewActivity extends ListActivity{
 		//tabID = rand.nextInt();
 		String fn = new String();
 		Intent intent = getIntent();
-		fn = intent.getStringExtra("com.tutorials.hellotabwidget.FN");		
+		fn = intent.getStringExtra("com.topherlee.psonememorymanager.FN");		
         super.onCreate(savedInstanceState);        
         final ListView lv = getListView();
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -136,7 +136,7 @@ public class MCViewActivity extends ListActivity{
         
 
         IntentFilter filter = new IntentFilter();
-        filter.addAction("com.tutorials.hellotabwidget.COPYMC");
+        filter.addAction("com.topherlee.psonememorymanager.COPYMC");
         registerReceiver(receiver, filter);
 
 	}
@@ -210,7 +210,7 @@ public class MCViewActivity extends ListActivity{
 		dirFrame frames[];
 		saveBlock blocks[];
 		Intent broadcast = new Intent();
-		broadcast.setAction("com.tutorials.hellotabwidget.COPYMC");
+		broadcast.setAction("com.topherlee.psonememorymanager.COPYMC");
 		MemoryCard mcl = Statics.cards[testid];
 		frame = mcl.getFrame(num);
 		if(frame.getSize()>8192){
@@ -268,7 +268,7 @@ public class MCViewActivity extends ListActivity{
 	    		
 	    		//dila = new DescIconListAdapter(this);
 	            //testid = -1;
-	            String fn = data.getStringExtra("com.tutorials.hellotabwidget.FN");
+	            String fn = data.getStringExtra("com.topherlee.psonememorymanager.FN");
 	            int savenum = data.getIntExtra("savenum", 0);
 	            
 	            MemoryCard mcl = Statics.cards[testid];
