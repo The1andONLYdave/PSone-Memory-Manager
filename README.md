@@ -17,6 +17,7 @@ Changelog:
 -added raw/blank_card
 -added this README and GNU_GPLv3
 -Edited strings.xml
+-Added background image in tabs view (http://www.freewallsource.com/playstation-wallpaper-4802.html/playstation-wallpaper-4802)
 
 (7.31.2014)
 -Changed Icon (http://rocketdock.com/images/screenshots/41S78A1CPBL._SL500_AA280_-copy.png)
