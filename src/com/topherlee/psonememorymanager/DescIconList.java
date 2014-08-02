@@ -2,7 +2,7 @@ package com.topherlee.psonememorymanager;
 
 import android.graphics.Bitmap;
 import android.widget.TextView;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class DescIconList implements Comparable<DescIconList>{
 	

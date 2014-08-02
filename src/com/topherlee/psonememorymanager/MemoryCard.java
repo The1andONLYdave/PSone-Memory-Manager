@@ -15,7 +15,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.widget.TextView;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class MemoryCard{
 	

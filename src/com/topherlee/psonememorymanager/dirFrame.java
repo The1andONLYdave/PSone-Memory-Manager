@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class dirFrame implements Parcelable{
 	int type;

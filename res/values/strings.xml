@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PSX MC Manager</string>    
+    <string name="app_name">PSone Memory Manager</string>    
     <string name="up_one_level">..</string>
     <string name="current_dir">.</string>
 </resources>

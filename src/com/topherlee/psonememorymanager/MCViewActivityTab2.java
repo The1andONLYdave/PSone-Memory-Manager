@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class MCViewActivityTab2 extends ListActivity{
 	

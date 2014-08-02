@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class Prefs extends PreferenceActivity {
 	@Override

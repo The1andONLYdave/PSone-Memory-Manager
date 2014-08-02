@@ -8,7 +8,7 @@ import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class DescIconView extends LinearLayout{
 	private TextView mText = null;

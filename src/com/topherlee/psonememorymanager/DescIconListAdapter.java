@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class DescIconListAdapter extends BaseAdapter{
 	/** Remember our context so we can use it when constructing views. */

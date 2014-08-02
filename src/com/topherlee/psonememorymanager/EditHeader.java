@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class EditHeader extends Activity{
 	Spinner region;

@@ -24,7 +24,7 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class MCTabsWidget extends TabActivity {
 	private int numTabs;

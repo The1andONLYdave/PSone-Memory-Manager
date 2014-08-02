@@ -1,6 +1,6 @@
 package com.topherlee.psonememorymanager;
 
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 /*
  * (C) 2004 - Geotechnical Software Services

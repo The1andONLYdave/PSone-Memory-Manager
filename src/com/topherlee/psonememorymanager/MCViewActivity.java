@@ -21,7 +21,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.neko68k.psxmc.R;
+import com.topherlee.psonememorymanager.R;
 
 public class MCViewActivity extends ListActivity{
 	private static MemoryCard MC;

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.neko68k.psxmc"
-      android:versionCode="0103120438"
-      android:versionName="1.02">
-    <uses-sdk android:minSdkVersion="8"/>
+      package="com.topherlee.psonememorymanager"
+      android:versionCode="082014"
+      android:versionName="1.02b">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 	
     <application android:icon="@drawable/memcard" android:label="@string/app_name">    	
