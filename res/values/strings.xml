@@ -3,4 +3,13 @@
     <string name="app_name">PSone Memory Manager</string>    
     <string name="up_one_level">..</string>
     <string name="current_dir">.</string>
+    <string name="save">Save</string>
+    <string name="create">New</string>
+    <string name="open">Open</string>
+    <string name="prefs">Preferences</string>
+    <string name="nomc">No Card</string>
+    <string name="region">Region:</string>
+    <string name="save_id">Save ID:</string>
+    <string name="ok">Okay</string>
+    <string name="prod_id">Product ID:</string>
 </resources>

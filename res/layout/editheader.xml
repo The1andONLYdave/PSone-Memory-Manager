@@ -3,46 +3,55 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">	
+
     <TextView
         android:id="@+id/productID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product ID:"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/prod_id" />
+
     <EditText
         android:id="@+id/prodEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_background"
-        
-        android:maxLength="10"
-        android:minEms="10"
-        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/productID"
-        />
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/prod_id"
+        android:maxLength="10"
+        android:minEms="10" />
     
     <TextView
         android:id="@+id/saveID"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Save ID:"
-        android:layout_below="@id/prodEntry"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/prodEntry"
+        android:text="@string/save_id" />
+
     <EditText
         android:id="@+id/idEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/editbox_background"
-        
-        android:maxLength="8"
-        android:minEms="8"
-        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@id/saveID"
-        />
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/save_id"
+        android:maxLength="8"
+        android:minEms="8" />
+
     <TextView
         android:id="@+id/region"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Region:"
-        android:layout_below="@id/idEntry"/>
+        android:layout_below="@id/idEntry"
+        android:text="@string/region" />
+
     <Spinner 
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
