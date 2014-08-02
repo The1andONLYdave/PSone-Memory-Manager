@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">	
+    android:layout_height="fill_parent" >
 
     <TextView
         android:id="@+id/productID"
@@ -23,7 +22,7 @@
         android:hint="@string/prod_id"
         android:maxLength="10"
         android:minEms="10" />
-    
+
     <TextView
         android:id="@+id/saveID"
         android:layout_width="fill_parent"
@@ -52,18 +51,19 @@
         android:layout_below="@id/idEntry"
         android:text="@string/region" />
 
-    <Spinner 
+    <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/listRegion"   
-        android:layout_below="@id/region"/>
+        android:layout_below="@id/region"
+        android:entries="@array/listRegion" />
     />
+
     <Button
-     android:layout_height="wrap_content"
-     android:layout_width="wrap_content"
-     android:text="OK"
-     android:onClick="editOK" 
-     android:layout_below="@id/spinner"/>
-    
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:onClick="editOK"
+        android:text="OK" />
+
 </RelativeLayout>

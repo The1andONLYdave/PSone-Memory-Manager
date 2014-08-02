@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PSone Memory Manager</string>    
+
+    <string name="app_name">PSone Memory Manager</string>
     <string name="up_one_level">..</string>
     <string name="current_dir">.</string>
     <string name="save">Save</string>
@@ -14,4 +15,5 @@
     <string name="prod_id">Product ID:</string>
     <string name="about">About:</string>
     <string name="about_info">Topher Lee: based on code by neko68k</string>
+
 </resources>

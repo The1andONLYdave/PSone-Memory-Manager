@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-        <PreferenceCategory
-                android:title="Preferences">
-                <CheckBoxPreference
-                        android:title="Backup on save"
-                        android:defaultValue="false"
-                        android:summary="Make a backup of the memory card when saving."
-                        android:key="backupPref" />   
-                <CheckBoxPreference
-                        android:title="Convert on save"
-                        android:defaultValue="true"
-                        android:summary="Convert to preferred format on save. DexDrive format(.gme) ignores this setting and always converts to preferred type."
-                        android:key="convertPref" />
-                <ListPreference
-                        android:title="Preferred format"
-                        android:summary="Select the preferrred conversion format."
-                        android:key="formatPref"
-                        android:defaultValue="0"
-                        android:entries="@array/listFormat"
-                        android:entryValues="@array/listFormatVal" />
-                <Preference android:key="aboutPref" android:title="@string/about" android:selectable="false" android:summary="@string/about_info"/>                
-        </PreferenceCategory>		
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Preferences" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="backupPref"
+            android:summary="Make a backup of the memory card when saving."
+            android:title="Backup on save" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="convertPref"
+            android:summary="Convert to preferred format on save. DexDrive format(.gme) ignores this setting and always converts to preferred type."
+            android:title="Convert on save" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/listFormat"
+            android:entryValues="@array/listFormatVal"
+            android:key="formatPref"
+            android:summary="Select the preferrred conversion format."
+            android:title="Preferred format" />
+
+        <Preference
+            android:key="aboutPref"
+            android:selectable="false"
+            android:summary="@string/about_info"
+            android:title="@string/about" />
+    </PreferenceCategory>
+
 </PreferenceScreen>
