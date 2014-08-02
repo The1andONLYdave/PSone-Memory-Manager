@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/open"    	  
-    	  android:title="Open"/>
+    	  android:title="@string/open"/>
     <item android:id="@+id/save"          
-    	  android:title="Save"/>
+    	  android:title="@string/save"/>
     <item android:id="@+id/create"    	  
-    	  android:title="New"/>
+    	  android:title="@string/create"/>
     <item android:id="@+id/prefs"          
-    	  android:title="Preferences"/>
+    	  android:title="@string/prefs"/>
 </menu>
     
     

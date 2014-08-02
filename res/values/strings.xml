@@ -12,4 +12,6 @@
     <string name="save_id">Save ID:</string>
     <string name="ok">Okay</string>
     <string name="prod_id">Product ID:</string>
+    <string name="about">About:</string>
+    <string name="about_info">Topher Lee: based on code by neko68k</string>
 </resources>

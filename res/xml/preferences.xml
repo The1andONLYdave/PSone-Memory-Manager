@@ -4,7 +4,7 @@
                 android:title="Preferences">
                 <CheckBoxPreference
                         android:title="Backup on save"
-                        android:defaultValue="true"
+                        android:defaultValue="false"
                         android:summary="Make a backup of the memory card when saving."
                         android:key="backupPref" />   
                 <CheckBoxPreference
@@ -18,6 +18,7 @@
                         android:key="formatPref"
                         android:defaultValue="0"
                         android:entries="@array/listFormat"
-                        android:entryValues="@array/listFormatVal" />                
+                        android:entryValues="@array/listFormatVal" />
+                <Preference android:key="aboutPref" android:title="@string/about" android:selectable="false" android:summary="@string/about_info"/>                
         </PreferenceCategory>		
 </PreferenceScreen>
