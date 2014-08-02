@@ -23,5 +23,4 @@ Changelog:
 -Changed Icon (http://rocketdock.com/images/screenshots/41S78A1CPBL._SL500_AA280_-copy.png)
 
 (7.7.2014)
--Added README.md and GNU_GPLv3.txt to repo
 -Begin cleaning code
