@@ -16,11 +16,10 @@ Changelog:
 -Started from fresh fork
 -added raw/blank_card
 -added this README and GNU_GPLv3
+-Edited strings.xml
 
 (7.31.2014)
 -Changed Icon (http://rocketdock.com/images/screenshots/41S78A1CPBL._SL500_AA280_-copy.png)
--Added raw/blankcard
--More cleaning (Added Strings, etc)
 
 (7.7.2014)
 -Added README.md and GNU_GPLv3.txt to repo
