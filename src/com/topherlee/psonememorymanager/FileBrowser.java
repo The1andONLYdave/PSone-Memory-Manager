@@ -64,7 +64,7 @@ public class FileBrowser extends ListActivity {
          */
         private void browseToRoot() {
                 //browseTo(Environment.getExternalStorageDirectory());
-        	browseTo(new File("/mnt"));
+        	browseTo(new File("/mnt/sdcard"));
     }
        
         /**

@@ -15,7 +15,8 @@
         android:label="@string/app_name" >
         <activity
             android:name="com.topherlee.psonememorymanager.MCTabsWidget"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,26 +25,34 @@
         </activity>
         <activity
             android:name="com.topherlee.psonememorymanager.Card1Activity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape"/>
         <activity
             android:name="com.topherlee.psonememorymanager.Card2Activity"
-            android:label="@string/app_name" />
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape"/>
         <activity
             android:name="com.topherlee.psonememorymanager.FileBrowser"
-            android:label="@string/app_name" />
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape"/>
         <activity
-            android:name="com.topherlee.psonememorymanager.MCViewActivity" >
+            android:name="com.topherlee.psonememorymanager.MCViewActivity"
+            android:screenOrientation="landscape" >
             <intent-filter>
-                <action android:name="com.tutorials.hellotabwidget.COPYMC" >
+                <action android:name="com.tutorials.hellotabwidget.COPYMC"
+                    android:screenOrientation="landscape" >
                 </action>
             </intent-filter>
         </activity>
         <activity
-            android:name="com.topherlee.psonememorymanager.MCViewActivityTab2" />
+            android:name="com.topherlee.psonememorymanager.MCViewActivityTab2" 
+            android:screenOrientation="landscape"/>
         <activity
-            android:name="com.topherlee.psonememorymanager.Prefs" />
+            android:name="com.topherlee.psonememorymanager.Prefs" 
+            android:screenOrientation="landscape"/>
         <activity
-            android:name="com.topherlee.psonememorymanager.EditHeader" />
+            android:name="com.topherlee.psonememorymanager.EditHeader" 
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
