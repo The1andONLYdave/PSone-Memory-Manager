@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <PreferenceCategory android:title="Preferences" >
+    <PreferenceCategory android:title="@string/prefs" >
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="backupPref"
-            android:summary="Make a backup of the memory card when saving."
-            android:title="Backup on save" />
+            android:summary="@string/backup_save_sum"
+            android:title="@string/backup_save_text" />
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="convertPref"
-            android:summary="Convert to preferred format on save. DexDrive format(.gme) ignores this setting and always converts to preferred type."
-            android:title="Convert on save" />
+            android:summary="@string/convert_save_sum"
+            android:title="@string/convert_save_text" />
 
         <ListPreference
             android:defaultValue="0"
             android:entries="@array/listFormat"
             android:entryValues="@array/listFormatVal"
             android:key="formatPref"
-            android:summary="Select the preferrred conversion format."
-            android:title="Preferred format" />
-
-        <Preference
+            android:summary="@string/pref_format_sum"
+            android:title="@string/pref_format_text" />
+    </PreferenceCategory>
+    <PreferenceCategory android:summary="@string/about_sum" android:title="@string/about_text"><Preference
             android:key="aboutPref"
             android:selectable="false"
-            android:summary="@string/about_info"
-            android:title="@string/about" />
-    </PreferenceCategory>
+            android:summary="@string/about_sum"
+            android:title="@string/about_text" android:defaultValue="0"/><Preference android:key="exitPref" android:summary="@string/exit" android:title="@string/exit" android:enabled="false" android:selectable="true" android:defaultValue="0"/></PreferenceCategory>
 
 </PreferenceScreen>

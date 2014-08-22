@@ -46,6 +46,7 @@ public class MCTabsWidget extends TabActivity {
 	    	   
 	    
 	    intent = new Intent().setClass(this, MCViewActivity.class);
+	    //Converted this to string(TL);
 		intent.putExtra("com.topherlee.psonememorymanager.FN", "No MC");
 		intent.putExtra("tabid", 0);
 		tab = tabHost.newTabSpec("card"+totalTabs).setIndicator("No MC",
@@ -59,6 +60,7 @@ public class MCTabsWidget extends TabActivity {
 		intent.putExtra("tabid", 1);
 		tab = tabHost.newTabSpec("card"+totalTabs).setIndicator("No MC",
 	              res.getDrawable(R.drawable.memcard));
+		//TL;
 		tab.setContent(intent);
 		tablist.add(tab);
 		tabHost.addTab(tab);
@@ -125,7 +127,8 @@ public class MCTabsWidget extends TabActivity {
 	    		final AlertDialog.Builder alert = new AlertDialog.Builder(this);
 	    		final EditText input = new EditText(this);
 	    		alert.setView(input);
-	    		alert.setTitle("Enter new filename.");
+	    		//Converted this to string(TL);
+	    		alert.setTitle(getString (R.string.enter_filename));
 	    		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 	    			public void onClick(DialogInterface dialog, int whichButton) {
 	    				String value = input.getText().toString().trim();

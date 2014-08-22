@@ -4,16 +4,39 @@
     <string name="app_name">PSone Memory Manager</string>
     <string name="up_one_level">..</string>
     <string name="current_dir">.</string>
+    <string name="nomc">No Card</string>
+    <string name="memory_low">Not enough space on memory.</string>
+    <string name="saveid_lic">Save IDs must be unique to License code. Please change it after the copy completes.</string>
+    <string name="copied">Copied </string>
+    <string name="long_press_to_select">Long Press To Select Folder</string>
+    <string name="enter_filename">Enter new filename...</string>
+    
+    <string name="open">Open</string>
     <string name="save">Save</string>
     <string name="create">New</string>
-    <string name="open">Open</string>
+    <string name="exit">Exit</string>
     <string name="prefs">Preferences</string>
-    <string name="nomc">No Card</string>
+  
+    <string name="backup_save_sum">Make a backup of the memory card when saving?</string>
+    <string name="backup_save_text"></string>
+    <string name="convert_save_sum">Convert to preferred format on save? DexDrive format(.gme) ignores this setting and always converts to preferred type.</string>
+    <string name="convert_save_text"></string>
+    <string name="pref_format_text">Preferred format</string>
+    <string name="pref_format_sum">Select the preferred conversion format.</string>
+    <string name="about_text">About:</string>
+    <string name="about_sum">Topher Lee: based on code by neko68k</string>
+ 
     <string name="region">Region:</string>
     <string name="save_id">Save ID:</string>
     <string name="ok">Okay</string>
     <string name="prod_id">Product ID:</string>
-    <string name="about">About:</string>
-    <string name="about_info">Topher Lee: based on code by neko68k</string>
+    
+ 
+
+    
+    
+    
+    
+    
 
 </resources>

@@ -76,8 +76,10 @@ public class MCViewActivity extends ListActivity{
         			//MC = Statics.cards.get(tabID);
         			MemoryCard mcl = Statics.cards[testid];
         			
-        			if(mcl.getNumEmpties()<frames.size()){        				
-        				CharSequence text = "Not enough space on memory card.";
+        			if(mcl.getNumEmpties()<frames.size()){     
+        				//Converted this to string(TL);
+        				CharSequence text = getString(R.string.memory_low);
+        				//;
         				int duration = Toast.LENGTH_SHORT;
 
         				Toast toast = Toast.makeText(context, text, duration);
@@ -93,8 +95,8 @@ public class MCViewActivity extends ListActivity{
         			for(int i = 0; i<15; i++){
         				dirFrame tempframe = mcl.getFrame(i);
         				if(tempframe.getID().contentEquals(frames.get(0).getID())&&tempframe.getProd().contentEquals(frames.get(0).getProd())){
-        					
-        					Toast.makeText(getApplicationContext(), "Save ID's must be unique to License code. Please change it after the copy completes.", Toast.LENGTH_LONG).show();
+            				//Converted this to string(TL);
+        					Toast.makeText(context, getString(R.string.saveid_lic), Toast.LENGTH_LONG).show();
         					/*intent = new Intent();
         					intent.setClass(getApplicationContext(), EditHeader.class);
         		    		intent.putExtra("prodid", new String(mcl.getFrame(i).getProd()));
@@ -127,7 +129,9 @@ public class MCViewActivity extends ListActivity{
         			
         			update();
     				Statics.changed = true;
-    				Toast.makeText(getApplicationContext(), "Copied " +blocks.get(0).getTitle(), Toast.LENGTH_SHORT).show();
+    				//Converted this to string(TL);
+    				Toast.makeText(context, getString(R.string.copied) +blocks.get(0).getTitle(), Toast.LENGTH_SHORT).show();
+    				//;
         			abortBroadcast();
         			return;
         		}        		
@@ -332,7 +336,7 @@ public class MCViewActivity extends ListActivity{
 	@Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
             final int selectionRowID = (int)position;
-            
+            //TODO: Convert this to string(TL);
             final CharSequence[] items = {"Edit Details", "Copy", "Delete", "Restore"};//, 
     				//"Import", "Export"};
 
@@ -345,6 +349,7 @@ public class MCViewActivity extends ListActivity{
     		    	if(items[item]=="Copy"){
     		    		MemoryCard mcl = Statics.cards[testid];
     		    		if(mcl.getFrame(selectionRowID).getType()>81)
+    		    			//TODO: Convert this to string(TL);
     		    			Toast.makeText(getApplicationContext(), "Cannot directly copy linked blocks.", Toast.LENGTH_SHORT).show();
     		    		else
     		    			sendBroadcast(selectionRowID);
@@ -352,6 +357,7 @@ public class MCViewActivity extends ListActivity{
     		    	if(items[item]=="Delete"){
     		    		MemoryCard mcl = Statics.cards[testid];
     		    		if(mcl.getFrame(selectionRowID).getType()>81)
+    		    			//TODO: Convert this to string(TL);
     		    			Toast.makeText(getApplicationContext(), "Cannot directly delete linked blocks.", Toast.LENGTH_SHORT).show();
     		    		else{
     		    		mcl.delete(selectionRowID);
@@ -365,16 +371,19 @@ public class MCViewActivity extends ListActivity{
     		    	if(items[item]=="Restore"){
     		    		MemoryCard mcl = Statics.cards[testid];
     		    		if(mcl.getFrame(selectionRowID).getType()>161)
+    		    			//TODO: Convert this to string(TL);
     		    			Toast.makeText(getApplicationContext(), "Cannot directly restore linked blocks.", Toast.LENGTH_SHORT).show();
     		    		else if(mcl.getFrame(selectionRowID).getType()<161)
     		    			return;
     		    		else{
     		    			boolean result = mcl.unDelete(selectionRowID);
     		    			if(result){
+    		    				//TODO: Convert this to string(TL);
     		    				Toast.makeText(getApplicationContext(), "Successfully restored ."+mcl.getTitle(selectionRowID), Toast.LENGTH_SHORT).show();
     		    				update();
     		    				Statics.changed = true;
     		    			} else {
+    		    				//TODO: Convert this to string(TL);
     		    				Toast.makeText(getApplicationContext(), "Could not restore ."+mcl.getTitle(selectionRowID), Toast.LENGTH_SHORT).show();
     		    			}
     		    		}
@@ -383,6 +392,7 @@ public class MCViewActivity extends ListActivity{
     		    		Intent intent = new Intent();
     		    		intent.setClass(getApplicationContext(), FileBrowser.class);//  .setClass(this, FileBrowser.class);
     		    		intent.putExtra("dirpick", true);
+    		    		//TODO: Convert this to string(TL);
     		    		intent.putExtra("title", "Long Press To Select Folder");
     		    		intent.putExtra("savenum", selectionRowID);
     		        	startActivityForResult(intent, 65533);
