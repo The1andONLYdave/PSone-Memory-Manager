@@ -195,8 +195,8 @@ public class MCTabsWidget extends TabActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
+        inflater.inflate(R.menu.main_activity_actions, menu);
+        return super.onCreateOptionsMenu(menu);
     }
     
     @Override
@@ -218,6 +218,7 @@ public class MCTabsWidget extends TabActivity {
         	if(Statics.cards[tabHost.getCurrentTab()]==null){
         		Toast.makeText(getApplicationContext(), "No MC loaded in slot "+(tabHost.getCurrentTab()+1)+".", Toast.LENGTH_SHORT).show();
         		return true;
+        		
         	}
         		
     		

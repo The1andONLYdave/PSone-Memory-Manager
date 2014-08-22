@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PSone Administrador de Memoria</string>
+    <string name="up_one_level">..</string>
+    <string name="current_dir">.</string>
+    <string name="nomc">No hay tarjeta Cargado</string>
+    <string name="memory_low">No hay suficiente espacio en la memoria.</string>
+    <string name="saveid_lic">Guardar los ID debe ser único para la licencia para código. Por favor cambia después de la copia completa.</string>
+    <string name="copied">Copiado </string>
+    <string name="long_press_to_select">Pulsación larga para seleccionar la carpeta</string>
+    <string name="enter_filename">( Introduzca el nuevo nombre de archivo )</string>
+    <string name="up_directory">[[ .. ]]</string>
+    <string name="open">Abierta</string>
+    <string name="save">Guardar</string>
+    <string name="create">Nueva</string>
+    <string name="exit">Salida</string>
+    <string name="settings">Ajustes</string>
+    <string name="backup_save_sum">Hacer una copia de seguridad de la tarjeta de memoria al guardar?</string>
+    <string name="backup_save_text"></string>
+    <string name="convert_save_sum">Convertir a formato preferido de ahorrar? Formato DexDrive (.gme) ignora este ajuste y siempre se convierte en tipo preferido.</string>
+    <string name="convert_save_text"></string>
+    <string name="pref_format_text">Formato preferido</string>
+    <string name="pref_format_sum">Seleccione el formato de conversión preferido.</string>
+    <string name="about_text">Acerca de:</string>
+    <string name="about_sum">Topher Lee: basado en el código de neko68k</string>
+    <string name="region">Región:</string>
+    <string name="save_id">Identificación del Guardar:</string>
+    <string name="ok">Bueno</string>
+    <string name="prod_id">Identificación del Producto:</string>
+    <string name="search">Búsqueda</string>
+
+</resources>
