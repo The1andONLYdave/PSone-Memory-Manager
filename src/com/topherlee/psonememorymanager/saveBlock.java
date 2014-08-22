@@ -8,7 +8,6 @@ import java.io.UnsupportedEncodingException;
 import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.topherlee.psonememorymanager.R;
 
 public class saveBlock implements Parcelable{
 	short magic;

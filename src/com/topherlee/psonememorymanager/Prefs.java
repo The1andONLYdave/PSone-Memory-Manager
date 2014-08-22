@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.view.MenuItem;
+
 import com.topherlee.psonememorymanager.R;
 
 public class Prefs extends PreferenceActivity {
@@ -44,4 +46,6 @@ public class Prefs extends PreferenceActivity {
     		Statics.exportFmt = 0;
 		super.onPause();
 	}
+	
+
 }

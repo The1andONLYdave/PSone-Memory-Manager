@@ -17,7 +17,6 @@
             android:layout_height="wrap_content"
             android:background="@color/transblack"
             android:longClickable="true" >
-
         </TabWidget>
 
         <FrameLayout
@@ -26,7 +25,6 @@
             android:layout_height="fill_parent"
             android:background="@color/transblack"
             android:padding="5dp" >
-
         </FrameLayout>
     </LinearLayout>
 

@@ -103,11 +103,12 @@ public class FileBrowser extends ListActivity {
                         // TODO Auto-generated catch block
                         e1.printStackTrace();
                 }
-                //this.directoryEntries.add(".");
+                //UNCOMMENTED
+                this.directoryEntries.add(".");
                
-               // if(this.currentDirectory.getParent() != null)
-                //        this.directoryEntries.add("..");
-               
+                if(this.currentDirectory.getParent() != null)
+                        this.directoryEntries.add("..");
+               //TO HERE
                 switch(this.displayMode){
                         case ABSOLUTE:
                                 for (File file : files){

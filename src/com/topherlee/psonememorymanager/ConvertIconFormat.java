@@ -1,7 +1,6 @@
 package com.topherlee.psonememorymanager;
 
 import android.graphics.Bitmap;
-import com.topherlee.psonememorymanager.R;
 
 
 // this converts the icon from psx format to 
@@ -26,13 +25,13 @@ public class ConvertIconFormat {
 		int r;
 		int g;
 		int b;
-		int m;
+		//int m;
 		int out;
 		
 		r = in&0x1f;
 		g = (in&0x3e0)>>5;
 		b = (in&0x7c00)>>10;
-		m = (in&0x8000)>>15;
+		//m = (in&0x8000)>>15;
 		
 		r<<=3;
 		g<<=3;

@@ -21,10 +21,22 @@
             android:summary="@string/pref_format_sum"
             android:title="@string/pref_format_text" />
     </PreferenceCategory>
-    <PreferenceCategory android:summary="@string/about_sum" android:title="@string/about_text"><Preference
+    <PreferenceCategory
+        android:summary="@string/about_sum"
+        android:title="@string/about_text" >
+        <Preference
+            android:defaultValue="0"
             android:key="aboutPref"
             android:selectable="false"
             android:summary="@string/about_sum"
-            android:title="@string/about_text" android:defaultValue="0"/><Preference android:key="exitPref" android:summary="@string/exit" android:title="@string/exit" android:enabled="false" android:selectable="true" android:defaultValue="0"/></PreferenceCategory>
+            android:title="@string/about_text" />
+        <Preference
+            android:defaultValue="0"
+            android:enabled="false"
+            android:key="exitPref"
+            android:selectable="true"
+            android:summary="@string/exit"
+            android:title="@string/exit" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

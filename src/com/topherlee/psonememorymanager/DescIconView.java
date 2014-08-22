@@ -3,12 +3,10 @@ package com.topherlee.psonememorymanager;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Bitmap;
-import android.text.InputFilter;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.topherlee.psonememorymanager.R;
 
 public class DescIconView extends LinearLayout{
 	private TextView mText = null;

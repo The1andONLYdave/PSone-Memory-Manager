@@ -1,8 +1,5 @@
 package com.topherlee.psonememorymanager;
 
-import com.topherlee.psonememorymanager.R;
-
-
 public class Statics {
 	
 	static MemoryCard[] cards = new MemoryCard[]{null,null};
