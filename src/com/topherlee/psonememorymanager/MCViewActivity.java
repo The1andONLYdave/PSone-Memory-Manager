@@ -22,7 +22,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MCViewActivity extends ListActivity{ //extends ActionBarActivity{;
+public class MCViewActivity extends ListActivity{
 	private static MemoryCard MC;
 	private DescIconListAdapter dila;
 	private int isRunning = 0;

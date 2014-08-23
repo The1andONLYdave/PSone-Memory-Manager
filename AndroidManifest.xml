@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.topherlee.psonememorymanager"
     android:installLocation="auto"
-    android:versionCode="08222014"
-    android:versionName="1.1" >
+    android:versionCode="08232014"
+    android:versionName="1.1.2" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -37,14 +37,14 @@
             android:screenOrientation="landscape" />
         <activity
             android:name="com.topherlee.psonememorymanager.FileBrowser"
-            android:label="@string/app_name"
+            android:label="@string/file_browser"
             android:screenOrientation="landscape" />
         <activity
             android:name="com.topherlee.psonememorymanager.MCViewActivity"
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action
-                    android:name="com.tutorials.hellotabwidget.COPYMC"
+                    android:name="com.topherlee.psonememorymanager.COPYMC"
                     android:screenOrientation="landscape" >
                 </action>
             </intent-filter>

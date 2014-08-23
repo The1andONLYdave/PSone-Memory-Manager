@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">PSone Memory Manager</string>
+    <string name="file_browser">File Browser</string>
     <string name="up_one_level">..</string>
     <string name="current_dir">.</string>
     <string name="nomc">No Card Loaded</string>
@@ -10,11 +11,11 @@
     <string name="copied">Copied </string>
     <string name="long_press_to_select">Long Press To Select Folder</string>
     <string name="enter_filename">( Enter New Filename )</string>
-    <string name="up_directory">[[ .. ]]</string>
     <string name="open">Open</string>
     <string name="save">Save</string>
     <string name="create">New</string>
     <string name="exit">Exit</string>
+    <string name="close_application">Close Application</string>
     <string name="settings">Settings</string>
     <string name="backup_save_sum">Make a backup of the memory card when saving?</string>
     <string name="backup_save_text"></string>
@@ -29,5 +30,15 @@
     <string name="ok">Okay</string>
     <string name="prod_id">Product ID:</string>
     <string name="search">Search</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="restore">Restore</string>
+    <string name="no_link">Cannot directly delete linked blocks.</string>
+    <string name="restore_success">Successfully Restored .</string>
+    <string name="restore_failed">Could Not Restore .</string>
+    <string name="long_press">Long Press To Select Folder</string>
+    <string name="cant_edit_linked_blocks">Cannot edit linked blocks.</string>
+    <string name="empty_block">This Block is Empty.</string>
 
 </resources>

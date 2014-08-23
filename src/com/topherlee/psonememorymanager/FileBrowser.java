@@ -103,8 +103,8 @@ public class FileBrowser extends ListActivity {
                         // TODO Auto-generated catch block
                         e1.printStackTrace();
                 }
-                //UNCOMMENTED
-                this.directoryEntries.add(".");
+                //UNCOMMENTED (TL)
+                //this.directoryEntries.add(".");
                
                 if(this.currentDirectory.getParent() != null)
                         this.directoryEntries.add("..");
@@ -151,7 +151,7 @@ public class FileBrowser extends ListActivity {
         
         @Override
         public void onBackPressed() {    
-        	if(this.currentDirectory.getAbsolutePath().contentEquals("/mnt")){
+        	if(this.currentDirectory.getAbsolutePath().contentEquals("/mnt/sdcard")){
         		setResult(RESULT_CANCELED);
         		finish();
         	}

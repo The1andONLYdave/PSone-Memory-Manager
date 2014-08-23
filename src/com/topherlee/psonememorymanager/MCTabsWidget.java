@@ -196,7 +196,8 @@ public class MCTabsWidget extends TabActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_activity_actions, menu);
-        return super.onCreateOptionsMenu(menu);
+        //inflater.inflate(R.menu.menu, menu);
+        return true;
     }
     
     @Override
@@ -220,8 +221,9 @@ public class MCTabsWidget extends TabActivity {
         		return true;
         		
         	}
-        		
-    		
+//TopherLee added;
+        case R.id.exit:	
+//(TL)
     		// add check for save backup flag
     		MemoryCard mcl = Statics.cards[tabHost.getCurrentTab()];
     		mcl.save();

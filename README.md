@@ -15,7 +15,9 @@ Desription: This app allows you to create/edit/convert memory card files for use
 Disclaimer: The authors of this app are not responsible for any damage to your device or save files. This code is a work in progress so USE AT YOUR OWN RISK.
 
 Changelog:
-
+(8.23.2014)
+-Ver 1.1.2
+-Added ActionBar instead of menu
 (8.22.2014)
 -Ver 1.1
 -Added Spanish Translation (Using Google Translate,  so it might not be accurate)

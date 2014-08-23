@@ -19,5 +19,11 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <string-array name="listCardMenu">
+        <item>Edit Details</item>
+        <item>Copy</item>
+        <item>Delete</item>
+        <item>Restore</item>
+    </string-array>
 
 </resources>

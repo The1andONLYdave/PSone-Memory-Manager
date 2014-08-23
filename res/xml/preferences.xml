@@ -27,15 +27,14 @@
         <Preference
             android:defaultValue="0"
             android:key="aboutPref"
-            android:selectable="false"
+            android:selectable="true"
             android:summary="@string/about_sum"
             android:title="@string/about_text" />
         <Preference
             android:defaultValue="0"
-            android:enabled="false"
             android:key="exitPref"
             android:selectable="true"
-            android:summary="@string/exit"
+            android:summary="@string/close_application"
             android:title="@string/exit" />
     </PreferenceCategory>
 
