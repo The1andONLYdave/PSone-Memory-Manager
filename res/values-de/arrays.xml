@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="listFormat">
+        <item>FPSeCe(.mcd)</item>
+        <item>psx4droid(.mcr)</item>
+    </string-array>
+    <string-array name="listFormatVal">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="listRegion">
+        <item>Amerika</item>
+        <item>Japan</item>
+        <item>Europa</item>
+    </string-array>
+    <string-array name="listRegionVals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="listCardMenu">
+        <item>Details bearbeiten</item>
+        <item>Kopieren</item>
+        <item>Löschen</item>
+        <item>Wiederherstellen</item>
+    </string-array>
+
+</resources>
