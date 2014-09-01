@@ -1,4 +1,4 @@
-package com.topherlee.psonememorymanager;
+package com.dlka.psonememorymanager;
 
 public class Statics {
 	

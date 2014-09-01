@@ -1,4 +1,4 @@
-package com.topherlee.psonememorymanager;
+package com.dlka.psonememorymanager;
 
 import java.util.Map;
 
@@ -6,9 +6,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
-import android.webkit.WebView;
-
-import com.topherlee.psonememorymanager.R;
 
 public class Prefs extends PreferenceActivity {
 	@Override
