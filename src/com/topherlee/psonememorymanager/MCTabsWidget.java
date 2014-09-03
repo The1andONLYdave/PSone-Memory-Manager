@@ -34,6 +34,7 @@ public class MCTabsWidget extends TabActivity {
 	 String passedFN = new String();
 	 Intent intent;
 	 int totalTabs;
+	 int count = 0;
 	
     /** Called when the activity is first created. */
     @Override
@@ -46,7 +47,7 @@ public class MCTabsWidget extends TabActivity {
 	    	   
 	    
 	    intent = new Intent().setClass(this, MCViewActivity.class);
-	    //Converted this to string(TL);
+	    //Convert this to string(TL);
 		intent.putExtra("com.topherlee.psonememorymanager.FN", "No MC");
 		intent.putExtra("tabid", 0);
 		tab = tabHost.newTabSpec("card"+totalTabs).setIndicator("No MC",
@@ -73,7 +74,21 @@ public class MCTabsWidget extends TabActivity {
 	    totalTabs = 2;
 	    numTabs = 2;	    
 	}    
-    
+    public void onBackPressed() 
+    {
+
+       if(count == 1)
+       {
+          count=0;
+          finish();
+       }
+       else
+       {
+          Toast.makeText(getApplicationContext(), getString (R.string.back_to_exit), Toast.LENGTH_SHORT).show();
+          count++;
+       }
+        return;
+    }
     public void getPrefs(){
     	Map<String, ?> preferences;
     	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -129,7 +144,7 @@ public class MCTabsWidget extends TabActivity {
 	    		alert.setView(input);
 	    		//Converted this to string(TL);
 	    		alert.setTitle(getString (R.string.enter_filename));
-	    		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+	    		alert.setPositiveButton(getString (R.string.ok) , new DialogInterface.OnClickListener() {
 	    			public void onClick(DialogInterface dialog, int whichButton) {
 	    				String value = input.getText().toString().trim();
 	    				String fn = intent.getStringExtra("com.topherlee.psonememorymanager.FN");
@@ -178,7 +193,7 @@ public class MCTabsWidget extends TabActivity {
 	    			}
 	    		});
 
-	    		alert.setNegativeButton("Cancel",
+	    		alert.setNegativeButton(getString (R.string.cancel),
 	    				new DialogInterface.OnClickListener() {
 	    					public void onClick(DialogInterface dialog, int whichButton) {
 	    						dialog.cancel();
@@ -212,22 +227,20 @@ public class MCTabsWidget extends TabActivity {
         	Intent in= new Intent();
     		in.setClass(getApplicationContext(), FileBrowser.class);//  .setClass(this, FileBrowser.class);
     		in.putExtra("dirpick", true);
-    		in.putExtra("title", "Long Press To Select Folder");
+    		in.putExtra("title", getString (R.string.long_press));
         	startActivityForResult(in, 65534);
         	return true;
         case R.id.save:
         	if(Statics.cards[tabHost.getCurrentTab()]==null){
-        		Toast.makeText(getApplicationContext(), "No MC loaded in slot "+(tabHost.getCurrentTab()+1)+".", Toast.LENGTH_SHORT).show();
+        		Toast.makeText(getApplicationContext(), getString (R.string.nomc)+" "+(tabHost.getCurrentTab()+1)+".", Toast.LENGTH_SHORT).show();
         		return true;
         		
         	}
-//TopherLee added;
-        case R.id.exit:	
-//(TL)
+
     		// add check for save backup flag
     		MemoryCard mcl = Statics.cards[tabHost.getCurrentTab()];
     		mcl.save();
-    		Toast.makeText(getApplicationContext(), "Saved slot "+(tabHost.getCurrentTab()+1)+".", Toast.LENGTH_SHORT).show();
+    		Toast.makeText(getApplicationContext(), getString (R.string.saved_slot)+" "+(tabHost.getCurrentTab()+1)+".", Toast.LENGTH_SHORT).show();
     		TabWidget vTabs = getTabWidget();
     		RelativeLayout rLayout = (RelativeLayout) vTabs.getChildAt(tabHost.getCurrentTab());
     		((TextView) rLayout.getChildAt(1)).setText(mcl.getDir());

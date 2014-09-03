@@ -44,17 +44,11 @@ public class Prefs extends PreferenceActivity {
     	}
     	else
     		Statics.exportFmt = 0;
-    	String about_text = (String) preferences.get("aboutPref");
-    	if (about_text !=null){
+    	String about = (String) preferences.get("aboutPref");
+    	if (about !=null){
     		
     	}
-    	/*	WebView myWebView = (WebView) findViewById(R.id.webview);
-		    myWebView.setWebViewClient(new WebViewClient());
-    		myWebView.loadUrl("http://github.com/TopherLee513/PSone-Memory-Manager");*/
-    	String exit = (String) preferences.get("exitPref");
-    	if (exit !=null){
-    		
-    	}
+
 		super.onPause();
 	}
 	

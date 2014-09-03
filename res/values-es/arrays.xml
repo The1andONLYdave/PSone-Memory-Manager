@@ -2,8 +2,8 @@
 <resources>
 
     <string-array name="listFormat">
-        <item>FPSeCe(.mcd)</item>
         <item>psx4droid(.mcr)</item>
+        <item>FPSeCe(.mcd)</item>
     </string-array>
     <string-array name="listFormatVal">
         <item>0</item>

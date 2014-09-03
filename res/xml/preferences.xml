@@ -2,6 +2,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <PreferenceCategory android:title="@string/settings" >
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/listFormat"
+            android:entryValues="@array/listFormatVal"
+            android:key="formatPref"
+            android:summary="@string/pref_format_sum"
+            android:title="@string/pref_format_text" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="backupPref"
@@ -13,29 +20,15 @@
             android:summary="@string/convert_save_sum"
             android:title="@string/convert_save_text" />
 
-        <ListPreference
-            android:defaultValue="0"
-            android:entries="@array/listFormat"
-            android:entryValues="@array/listFormatVal"
-            android:key="formatPref"
-            android:summary="@string/pref_format_sum"
-            android:title="@string/pref_format_text" />
     </PreferenceCategory>
     <PreferenceCategory
-        android:summary="@string/about_sum"
-        android:title="@string/about_text" >
+        android:summary="@string/about"
+        android:title="@string/about" >
         <Preference
-            android:defaultValue="0"
             android:key="aboutPref"
-            android:selectable="true"
             android:summary="@string/about_sum"
             android:title="@string/about_text" />
-        <Preference
-            android:defaultValue="0"
-            android:key="exitPref"
-            android:selectable="true"
-            android:summary="@string/close_application"
-            android:title="@string/exit" />
+        <Preference android:key="appPref" android:summary="@string/pref_emu" android:title="@string/retroarch"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

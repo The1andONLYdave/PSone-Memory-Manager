@@ -19,12 +19,12 @@
     <!-- Settings, should always be in the overflow -->
     <item
         android:id="@+id/prefs"
+        android:icon="@drawable/ic_action_settings"
         android:title="@string/settings"
-        android:icon="@drawable/ic_action_settings"/>
-    <!-- android:showAsAction="never" -->
-    <item
+        android:showAsAction="never"/>
+    <!--<item
         android:id="@+id/exit"
         android:icon="@drawable/ic_action_cancel"
         android:title="@string/exit"/>
-
+-->
 </menu>
