@@ -4,11 +4,9 @@
 |         By: TopherLee513                                       |
 |         (http://github.com/TopherLee513/PSone-Memory-Manager)  |
 |         eMail: topher.lee.13@gmail.com                         |
+|         based on work by neko68k                               |
+|         (http://github.com/neko68k/PSX-MC-Manager)             |
 ------------------------------------------------------------------
----------------------------------------------------------
-|         based on work by neko68k                      |
-|         (http://github.com/neko68k/PSX-MC-Manager)    |
----------------------------------------------------------
 |         License: GPLv3 (GNU_GPLv3.txt)      |
 -----------------------------------------------
 Desription: This app allows you to create/edit/convert memory card files for use with PlayStation emulators on Android OS.
