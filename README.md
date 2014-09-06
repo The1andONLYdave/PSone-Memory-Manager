@@ -5,6 +5,7 @@
 |         (http://github.com/TopherLee513/PSone-Memory-Manager)  |
 |         eMail: topher.lee.13@gmail.com                         |
 ------------------------------------------------------------------
+---------------------------------------------------------
 |         based on work by neko68k                      |
 |         (http://github.com/neko68k/PSX-MC-Manager)    |
 ---------------------------------------------------------
@@ -14,7 +15,15 @@ Desription: This app allows you to create/edit/convert memory card files for use
 
 Disclaimer: The authors of this app are not responsible for any damage to your device or save files. This code is a work in progress so USE AT YOUR OWN RISK.
 
+German Translation by: David-Lee Kulsch (The1andONLYdave)
+Checkout his Github @: https://github.com/The1andONLYdave
+
+
 Changelog:
+(09.06.2014)
+-Ver 1.2
+-Implemented "Press Back Again to Exit" method... (Fix by David-Lee, must merge)
+
 (09.03.2014)
 -Ver 1.1.4
 -Implemented "Press Back Again to Exit" method... (Doesn't work)
