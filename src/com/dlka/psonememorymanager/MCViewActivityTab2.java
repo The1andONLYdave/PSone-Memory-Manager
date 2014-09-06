@@ -37,4 +37,8 @@ public class MCViewActivityTab2 extends ListActivity{
             int selectionRowID = position;
             
     }
+	@Override
+	  public void onBackPressed() {
+	    this.getParent().onBackPressed();   
+	  }
 }

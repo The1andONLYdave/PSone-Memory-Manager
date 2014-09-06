@@ -15,6 +15,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -33,8 +34,34 @@ public class MCTabsWidget extends TabActivity {
 	 String passedFN = new String();
 	 Intent intent;
 	 int totalTabs;
-	
-    /** Called when the activity is first created. */
+	 int count=0;
+	 
+	  @Override
+	     public void onBackPressed()
+	     {
+	    	 
+		 // this.getParent().onBackPressed();  
+		 // this.finish(); 
+		  Log.d("MCTabsWidget","inside onBackPressed()");
+	    	
+	    	if(count==0)
+	    	{
+	    		Toast.makeText(getApplicationContext(),("Press again to exit app"), Toast.LENGTH_SHORT).show();
+	    		count++;
+	    		return;
+	    	}
+	    	else if(count == 1)
+	    	{
+	    		//count=0;no need to reset, we do in onCreate, and super.onBackPressed destroys activity too
+	    		super.onBackPressed();  // just in case	
+	    	}
+	    	else
+	    	{ //if something wrong, better close app than make it unclosable
+	    		 super.onBackPressed();  // just in case	
+	    	}    
+	     }
+	  
+	 /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	TabHost.TabSpec tab = null;  // Resusable TabSpec for each tab
@@ -70,8 +97,11 @@ public class MCTabsWidget extends TabActivity {
 		getPrefs();
 		
 	    totalTabs = 2;
-	    numTabs = 2;	    
+	    numTabs = 2;	
+	    count=0;
 	}    
+    
+  
     
     public void getPrefs(){
     	Map<String, ?> preferences;
