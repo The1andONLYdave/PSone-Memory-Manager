@@ -145,6 +145,10 @@ public class MCViewActivity extends ListActivity{
 	}
 	
 	@Override
+	  public void onBackPressed() {
+	    this.getParent().onBackPressed();   
+	  }
+	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState){
 		super.onSaveInstanceState(savedInstanceState);
 		//savedInstanceState.
