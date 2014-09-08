@@ -13,6 +13,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -35,7 +36,37 @@ public class MCTabsWidget extends TabActivity {
 	 Intent intent;
 	 int totalTabs;
 	 int count=0;
+	 int bg=1;
 	 
+	 
+//	  @Override
+//	     public void onResume()
+//	  {
+//		  //getPrefs(); will FC onCreate because wallpaper isn't (why?) initialised, but if we write boolean wallpaper there it isn't global anymore
+//		  boolean wallpaper=true; //set wallpaper and initialise it
+//		  Map<String, ?> preferences;
+//	    	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+//	    	preferences = prefs.getAll();
+//	    	wallpaper = (Boolean) preferences.get("wallpaperPref");
+//	    	
+//		  Log.d("onResume", String.valueOf(wallpaper)); //debug print wallpaper
+//		  if(wallpaper==false){
+//			  //remove wallpaper
+//			  //R.drawable.background=false;
+//			  //android:background="@drawable/background" >
+//			 //tabHost.setBackgroundResource(0);
+//			// tabHost.getCurrentView().setBackgroundResource(0);
+//			  tabHost.setBackgroundResource(0);
+//		  }
+//		  else{
+//			  //display wallpaper
+//			 //crash layout tabHost.getTabWidget().setBackgroundResource(R.drawable.background);
+//			 tabHost.setBackgroundResource(R.drawable.background);
+//			 //tabHost.getCurrentView().setBackgroundResource(R.drawable.background);
+//		  }
+//		  super.onResume();
+//	  }
+//	
 	  @Override
 	     public void onBackPressed()
 	     {
@@ -107,7 +138,11 @@ public class MCTabsWidget extends TabActivity {
     	Map<String, ?> preferences;
     	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
     	preferences = prefs.getAll();
+    	Log.d("getPrefs","1");
     	Boolean backup = (Boolean) preferences.get("backupPref");
+    	Log.d("getPrefs","2");
+    	//wallpaper = (Boolean) preferences.get("wallpaperPref");
+    	Log.d("getPrefs","3");
     	if(backup==null||backup==true){
     		Statics.backup = true;
     	}
@@ -250,9 +285,7 @@ public class MCTabsWidget extends TabActivity {
         		return true;
         		
         	}
-//TopherLee added;
-        case R.id.exit:	
-//(TL)
+
     		// add check for save backup flag
     		MemoryCard mcl = Statics.cards[tabHost.getCurrentTab()];
     		mcl.save();
@@ -262,10 +295,32 @@ public class MCTabsWidget extends TabActivity {
     		((TextView) rLayout.getChildAt(1)).setText(mcl.getDir());
     		Statics.cards[tabHost.getCurrentTab()] = mcl;
     		return true;	 
+//TopherLee added; //moved by David-Lee Kulsch
+        case R.id.exit:	
+        	super.onBackPressed();
+        	return true;//finish(); //still won't work, so removing temporary from preferencescreen
+//(TL)	
         case R.id.prefs:
         	Intent i = new Intent().setClass(getApplicationContext(), Prefs.class);
         	startActivityForResult(i, 65532);
         	return true;
+        case R.id.mail: //starting mail program and filling some defaults. English, no <string> at the moment.
+        	StringBuffer buffer = new StringBuffer();
+        	buffer.append("mailto:");
+        	buffer.append("feedback-psonememorymanger@kulsch-it.de");
+        	buffer.append("?subject=");
+        	buffer.append("Feedback");
+        	buffer.append("&body=");
+        	buffer.append("Android Version:?\n Device-Model:?\nYour Message:");
+        	String uriString = buffer.toString().replace(" ", "%20");
+        	startActivity(Intent.createChooser(new Intent(Intent.ACTION_SENDTO, Uri.parse(uriString)), "Contact Developer"));
+        	return true;
+        case R.id.tooglebackground:
+        	//if(bg==0){tabHost.setBackgroundResource(R.drawable.background);bg=1;}
+        	// else { 
+        	tabHost.setBackgroundResource(0);//bg=0;}
+ 			return true;
+ 			
         default:
             return super.onOptionsItemSelected(item);
         }

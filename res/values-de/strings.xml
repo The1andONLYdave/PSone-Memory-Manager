@@ -18,13 +18,13 @@
     <string name="close_application">Schliesse App</string>
     <string name="settings">Einstellungen</string>
     <string name="backup_save_sum">Sicherungskopie der Memorykarte beim speichern erstellen?</string>
-    <string name="backup_save_text"></string>
+    <string name="backup_save_text">Backup bei speichern?</string>
     <string name="convert_save_sum">In bevorzugtes Format umwandeln beim Speichern? DexDrive Format(.gme) ignoriert diese Einstellung und wird immer in das bevorzugte Format umgewandelt.</string>
-    <string name="convert_save_text"></string>
+    <string name="convert_save_text">Umwandeln bei speichern?</string>
     <string name="pref_format_text">Bevorzugtes Format</string>
     <string name="pref_format_sum">Wähle das bevorzugte Format beim umwandeln.</string>
     <string name="about_text">Über:</string>
-    <string name="about_sum">Topher Lee: basierend auf code von neko68k - Übersetzung von David-Lee Kulsch</string>
+    <string name="about_sum">Topher Lee und David-Lee Kulsch: basierend auf code von neko68k</string>
     <string name="region">Region:</string>
     <string name="save_id">Save ID:</string>
     <string name="ok">Okay</string>
@@ -40,5 +40,16 @@
     <string name="long_press">Lange drücken um Verzeichnis auszuwählen</string>
     <string name="cant_edit_linked_blocks">Kann die verknüpften Blöcke nicht bearbeiten.</string>
     <string name="empty_block">Dieser Block/Bereich ist leer.</string>
-
+	<string name="mail">Emaile uns Feedback</string>
+	<string name="wallpaper_sum">Hintergrundbild wechseln</string>
+	<string name="wallpaper_text">Abwählen um Hintergrundbild auszublenden für bessere Lesbarkeit.</string>
+	<string name="wallpaper_hide">Hintergrundbild ausblenden</string>
+	<string name="saved_slot">Speicher Slot</string>
+	<string name="pref_emu">Bevorzugter Emulator</string>
+	<string name="retroarch">RetroArch</string>
+	<string name="back_to_exit">Drücke erneut zurück zum Beenden...</string>
+	<string name="cancel">Abbrechen</string>
+	
+	
+	
 </resources>

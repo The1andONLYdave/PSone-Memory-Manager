@@ -21,6 +21,11 @@
             android:summary="@string/pref_format_sum"
             android:title="@string/pref_format_text" />
     </PreferenceCategory>
+   <!--  <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="wallpaperPref"
+            android:summary="@string/wallpaper_text"
+            android:title="@string/wallpaper_sum" /> -->
     <PreferenceCategory
         android:summary="@string/about_sum"
         android:title="@string/about_text" >
@@ -30,12 +35,14 @@
             android:selectable="true"
             android:summary="@string/about_sum"
             android:title="@string/about_text" />
-        <Preference
+        
+    
+    <!--     <Preference
             android:defaultValue="0"
             android:key="exitPref"
             android:selectable="true"
             android:summary="@string/close_application"
-            android:title="@string/exit" />
+            android:title="@string/exit" /> -->
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -13,6 +13,9 @@
     <item
         android:id="@+id/prefs"
         android:title="@string/settings"/>
+     <item
+        android:id="@+id/mail"
+        android:title="@string/mail"/>
     <item
         android:id="@+id/exit"
         android:title="@string/exit"/>
