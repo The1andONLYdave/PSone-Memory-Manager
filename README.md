@@ -1,23 +1,33 @@
 --------------------------------------------------
 |         PSone Memory Manager (Android)         |
 ------------------------------------------------------------------
-|         By: TopherLee513                                       |
-|         (http://github.com/TopherLee513/PSone-Memory-Manager)  |
-|         eMail: topher.lee.13@gmail.com                         |
-|         based on work by neko68k                               |
-|         (http://github.com/neko68k/PSX-MC-Manager)             |
+|         By: TopherLee513 and David-Lee Kulsch                  |
+|      http://github.com/TopherLee513/PSone-Memory-Manager       |
+|      eMail: topher.lee.13@gmail.com                            |
+|      https://github.com/The1andONLYdave/PSone-Memory-Manager   |
+|      based on work by neko68k                                  |
+|      (http://github.com/neko68k/PSX-MC-Manager)                |
 ------------------------------------------------------------------
 |         License: GPLv3 (GNU_GPLv3.txt)      |
 -----------------------------------------------
+
 Desription: This app allows you to create/edit/convert memory card files for use with PlayStation emulators on Android OS.
 
 Disclaimer: The authors of this app are not responsible for any damage to your device or save files. This code is a work in progress so USE AT YOUR OWN RISK.
 
-German Translation by: David-Lee Kulsch (The1andONLYdave)
+German Translation and more by: David-Lee Kulsch (The1andONLYdave)
 Checkout his Github @: https://github.com/The1andONLYdave
 
+I hope to add things like:
+An about page to see the README while in-app
+Google Play Link to RetroArch (Recommended Emulator)
 
 Changelog:
+(09.09.2014)
+-Ver 1.4
+-Incorporated more code by David-Lee Kulsch
+-(Feedback eMail, Toggle Background, etc)
+
 (09.06.2014)
 -Ver 1.2
 -Implemented "Press Back Again to Exit" method... (Fix by David-Lee, must merge)

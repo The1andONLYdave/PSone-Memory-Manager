@@ -14,7 +14,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -35,7 +37,32 @@ public class MCTabsWidget extends TabActivity {
 	 Intent intent;
 	 int totalTabs;
 	 int count = 0;
-	
+	 int bg = 1;
+	 
+	  @Override
+	     public void onBackPressed()
+	     {
+	    	 
+		 // this.getParent().onBackPressed();  
+		 // this.finish(); 
+		  Log.d("MCTabsWidget","inside onBackPressed()");
+	    	
+	    	if(count==0)
+	    	{
+	    		Toast.makeText(getApplicationContext(),("Press again to exit app"), Toast.LENGTH_SHORT).show();
+	    		count++;
+	    		return;
+	    	}
+	    	else if(count == 1)
+	    	{
+	    		//count=0;no need to reset, we do in onCreate, and super.onBackPressed destroys activity too
+	    		super.onBackPressed();  // just in case	
+	    	}
+	    	else
+	    	{ //if something wrong, better close app than make it unclosable
+	    		 super.onBackPressed();  // just in case	
+	    	}    
+	     }
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,26 +101,16 @@ public class MCTabsWidget extends TabActivity {
 	    totalTabs = 2;
 	    numTabs = 2;	    
 	}    
-    public void onBackPressed() 
-    {
 
-       if(count == 1)
-       {
-          count=0;
-          finish();
-       }
-       else
-       {
-          Toast.makeText(getApplicationContext(), getString (R.string.back_to_exit), Toast.LENGTH_SHORT).show();
-          count++;
-       }
-        return;
-    }
     public void getPrefs(){
     	Map<String, ?> preferences;
     	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
     	preferences = prefs.getAll();
+    	Log.d("getPrefs","1");
     	Boolean backup = (Boolean) preferences.get("backupPref");
+    	Log.d("getPrefs","2");
+     	//wallpaper = (Boolean) preferences.get("wallpaperPref");
+       	Log.d("getPrefs","3");
     	if(backup==null||backup==true){
     		Statics.backup = true;
     	}
@@ -205,8 +222,6 @@ public class MCTabsWidget extends TabActivity {
     	}
     }
     
-
-    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -250,6 +265,23 @@ public class MCTabsWidget extends TabActivity {
         	Intent i = new Intent().setClass(getApplicationContext(), Prefs.class);
         	startActivityForResult(i, 65532);
         	return true;
+        case R.id.mail: //starting mail program and filling some defaults. English, no <string> at the moment.
+        	StringBuffer buffer = new StringBuffer();
+        	buffer.append("mailto:");
+        	buffer.append("feedback-psonememorymanger@kulsch-it.de");
+            buffer.append("?subject=");
+           	buffer.append("Feedback");
+          	buffer.append("&body=");
+          	buffer.append("Android Version:?\n Device-Model:?\nYour Message:");
+           	String uriString = buffer.toString().replace(" ", "%20");
+        		 startActivity(Intent.createChooser(new Intent(Intent.ACTION_SENDTO, Uri.parse(uriString)), (getString (R.string.contact_developer))));
+        		      return true;
+         case R.id.togglebackground:
+        		        	//if(bg==0){tabHost.setBackgroundResource(R.drawable.background);bg=1;}
+        		        	// else { 
+        		        	tabHost.setBackgroundResource(0);//bg=0;}
+        		 			return true;
+        // case R.id.about:
         default:
             return super.onOptionsItemSelected(item);
         }

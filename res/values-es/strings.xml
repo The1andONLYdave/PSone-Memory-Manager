@@ -31,19 +31,24 @@
     <string name="ok">Bueno</string>
     <string name="prod_id">Identificación del Producto:</string>
     <string name="search">Búsqueda</string>
-    
+    <!-- Needs Translated -->
     <string name="edit_details">Edit Details</string>
     <string name="copy">Copy</string>
     <string name="delete">Delete</string>
     <string name="restore">Restore</string>
     <string name="no_link">Cannot directly delete linked blocks.</string>
-    <string name="restore_success">Successfully Restored .</string>
-    <string name="restore_failed">Could Not Restore .</string>
+    <string name="restore_success">Successfully Restored.</string>
+    <string name="restore_failed">Could Not Restore.</string>
     <string name="long_press">Long Press To Select Folder</string>
     <string name="cant_edit_linked_blocks">Cannot edit linked blocks.</string>
     <string name="empty_block">This Block is Empty.</string>
     <string name="pref_emu">Preferred Emulator</string>
     <string name="retroarch">RetroArch</string>
-    <string name="back_to_exit">Press Back Again to Exit...</string>
+    <string name="back_to_exit">Press Back Again to Exit</string>
+    <string name="mail">Email us Feedback</string>
+	<string name="wallpaper_sum">Wallpaper</string>
+	<string name="wallpaper_text">Uncheck to hide default wallpaper for better readability.</string>
+	<string name="wallpaper_hide">Wallpaper disable</string>
+	<string name="contact_developer">Contact Developer</string>
 
 </resources>

@@ -44,10 +44,6 @@ public class Prefs extends PreferenceActivity {
     	}
     	else
     		Statics.exportFmt = 0;
-    	String about = (String) preferences.get("aboutPref");
-    	if (about !=null){
-    		
-    	}
 
 		super.onPause();
 	}

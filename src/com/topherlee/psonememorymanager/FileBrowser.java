@@ -130,11 +130,11 @@ public class FileBrowser extends ListActivity {
                                 		if(!dirpick){
                                 			
 	                                		int extOfs = file.getName().lastIndexOf(".");
-+	                                		if(extOfs==-1){//we have no occurance of "." here
-+							  		//TOAST: filename doesn't contain '.' or have no extension(.mcd for example), please select different file or rename it before!
-+									Toast.makeText(getApplicationContext(), "filename doesn't contain '.' or have no extension(.mcd for example), please select different file or rename it before!", Toast.LENGTH_LONG).show();
-+										}
-+									else if(extOfs != 0){
+	                                		if(extOfs==-1){//we have no occurance of "." here
+							  		//TOAST: filename doesn't contain '.' or have no extension(.mcd for example), please select different file or rename it before!
+									Toast.makeText(getApplicationContext(), "filename doesn't contain '.' or have no extension(.mcd for example), please select different file or rename it before!", Toast.LENGTH_LONG).show();
+										}
+									else if(extOfs != 0){
 		                                		String ext = file.getName().substring(extOfs, file.getName().length());          
 		                                		if(ext.contentEquals(".mcd")||ext.contentEquals(".MCD")||ext.contentEquals(".mcr")||ext.contentEquals(".MCR")||
 		                                				ext.contentEquals(".GME")||ext.contentEquals(".gme")){
