@@ -36,7 +36,10 @@
         <Preference 
             android:key="appPref" 
             android:summary="@string/pref_emu" 
-            android:title="@string/retroarch"/>
+            android:title="@string/retroarch">
+            <intent android:action="android.intent.action.VIEW"
+            android:data="https://play.google.com/store/apps/details?id=com.retroarch" />
+        </Preference>
     </PreferenceCategory>
 
 </PreferenceScreen>
