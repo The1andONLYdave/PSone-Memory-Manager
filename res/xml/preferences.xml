@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <!-- <PreferenceCategory android:title="@string/settings" > -->
     <ListPreference
         android:defaultValue="0"
         android:entries="@array/listFormat"
@@ -26,7 +25,6 @@
         android:summary="@string/wallpaper_text"
         android:title="@string/wallpaper_sum" />
 
-    <!-- </PreferenceCategory> -->
     <PreferenceCategory
         android:summary="@string/about"
         android:title="@string/about" >
@@ -34,7 +32,11 @@
             android:icon="@drawable/ic_action_about"
             android:key="aboutPref"
             android:summary="@string/about_sum"
-            android:title="@string/about_text" />
+            android:title="@string/about_text" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/TopherLee513/PSone-Memory-Manager/blob/master/README.md" />
+        </Preference>
         <Preference
             android:icon="@drawable/ic_retroarch"
             android:key="appPref"

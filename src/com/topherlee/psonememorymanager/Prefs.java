@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.support.v4.app.NavUtils;
+import android.view.MenuItem;
 import android.webkit.WebView;
 
 import com.topherlee.psonememorymanager.R;
@@ -15,11 +17,20 @@ public class Prefs extends PreferenceActivity {
     protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.preferences);            
-                        
+            getActionBar().setDisplayHomeAsUpEnabled(true);//Up Navigation           
             setResult(RESULT_OK);
             
     }
-	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	    // Respond to the action bar's Up/Home button
+	    case android.R.id.home:
+	        NavUtils.navigateUpFromSameTask(this);
+	        return true;
+	    }
+	    return super.onOptionsItemSelected(item);
+	}
 	@Override
 	protected void onPause(){
 		Map<String, ?> preferences;
@@ -44,14 +55,6 @@ public class Prefs extends PreferenceActivity {
     	}
     	else
     		Statics.exportFmt = 0;
-    	Boolean about = (Boolean) preferences.get("aboutPref");
-    	if(about==null||about==true){
-    		Statics.about = true;
-    		WebView myWebView = (WebView) findViewById(R.id.webview);
-    		myWebView.loadUrl("https://github.com/TopherLee513/PSone-Memory-Manager/blob/master/README.md");
-    	}
-    	else
-    		Statics.about = false;
 
 		super.onPause();
 	}

@@ -8,7 +8,7 @@
 |         License: GPLv3 (GNU_GPLv3.txt)      |
 -----------------------------------------------
 
-Desription: This app allows you to create/edit/convert memory card files for use with PlayStation emulators on Android OS.
+Description: This app allows you to create/edit/convert memory card files for use with PlayStation emulators on Android OS.
 
 Disclaimer: The authors of this app are not responsible for any damage to your device or save files. This code is a work in progress so USE AT YOUR OWN RISK.
 
@@ -17,11 +17,18 @@ Checkout his Github @: https://github.com/The1andONLYdave
 
 I hope to add things like:
 An about page to see the README while in-app
-Google Play Link to RetroArch (Recommended Emulator)
+Google Play Link to RetroArch (Works, but Crashes app)
 Move Background Toggle into settings (WIP)
-I'd also like to try to implement saving/syncing cards with Google Drive
+saving/syncing cards with Google Drive
 
-Changelog:
+#Changelog:
+(09.13.2014)
+**-Ver 1.4.2**
+-Fix Link to README (Hopefully)
+-Min SDK to API 16 (Until i can figure out support library)
+
+-Minor tweaks
+
 (09.11.2014)
 -Ver 1.4.1
 -Incorporated Google Play Link to RetroArch (David-Lee Kulsch)
@@ -71,8 +78,10 @@ Changelog:
 -Edited strings.xml
 
 ------------------------------------------------------------------
-|     David-Lee Kulsch
+|                                                                |
+|       **David-Lee Kulsch**                                     |
 |      https://github.com/The1andONLYdave/PSone-Memory-Manager   |
 |      based on work by neko68k                                  |
 |      (http://github.com/neko68k/PSX-MC-Manager)                |
+|                                                                |
 ------------------------------------------------------------------

@@ -9,6 +9,8 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.app.NavUtils;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,7 +30,7 @@ public class FileBrowser extends ListActivity {
         /** Called when the activity is first created. */
         @Override
         public void onCreate(Bundle icicle) {
-        		
+        	getActionBar().setDisplayHomeAsUpEnabled(true);//Up Navigation	
                 super.onCreate(icicle);
                 
                 // setContentView() gets called within the next line,
@@ -67,7 +69,16 @@ public class FileBrowser extends ListActivity {
                 //browseTo(Environment.getExternalStorageDirectory());
         	browseTo(new File("/mnt/sdcard"));
     }
-       
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+            }
+            return super.onOptionsItemSelected(item);
+        }
         /**
          * This function browses up one level
          * according to the field: currentDirectory

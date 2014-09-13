@@ -49,7 +49,7 @@ public class MCTabsWidget extends TabActivity {
 	    	
 	    	if(count==0)
 	    	{
-	    		Toast.makeText(getApplicationContext(),("Press again to exit"), Toast.LENGTH_SHORT).show();
+	    		Toast.makeText(getApplicationContext(),("Press again to exit"), Toast.LENGTH_SHORT).show();//String crashes app
 	    		count++;
 	    		return;
 	    	}

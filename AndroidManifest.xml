@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.topherlee.psonememorymanager"
     android:installLocation="auto"
-    android:versionCode="09112014"
-    android:versionName="1.4.1" >
+    android:versionCode="09132014"
+    android:versionName="1.4.2b" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="16"
         android:targetSdkVersion="20" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -39,7 +39,14 @@
             android:name="com.topherlee.psonememorymanager.FileBrowser"
             android:icon="@drawable/ic_action_collection"
             android:label="@string/file_browser"
-            android:screenOrientation="landscape" />
+            android:parentActivityName="com.topherlee.psonememorymanager.MCTabsWidget"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.topherlee.psonememorymanager.MCTabsWidget" />
+        </activity>
         <activity
             android:name="com.topherlee.psonememorymanager.MCViewActivity"
             android:screenOrientation="landscape" >
@@ -57,14 +64,14 @@
             android:name="com.topherlee.psonememorymanager.Prefs"
             android:icon="@drawable/ic_action_settings"
             android:label="@string/settings"
-            android:screenOrientation="landscape" />
-        <!--
-              <activity
-            android:name="com.topherlee.psonememorymanager.About"
-            android:icon="@drawable/ic_action_about"
-            android:label="@string/readme"
-            android:screenOrientation="landscape" />
-        -->
+            android:parentActivityName="com.topherlee.psonememorymanager.MCTabsWidget"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.topherlee.psonememorymanager.MCTabsWidget" />
+        </activity>
         <activity
             android:name="com.topherlee.psonememorymanager.EditHeader"
             android:label="@string/file_browser"
