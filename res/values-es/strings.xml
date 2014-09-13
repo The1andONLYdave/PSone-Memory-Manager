@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">Administrador de PSone Memoria</string>
+    <string name="email">topher.lee.13@gmail.com</string>
     <string name="file_browser">Explorador de Archivos</string>
     <string name="up_one_level">..</string>
     <string name="current_dir">.</string>
@@ -15,6 +16,7 @@
     <string name="save">Guardar</string>
     <string name="create">Nueva</string>
     <string name="exit">Salida</string>
+    <string name="close_application"></string>
     <string name="cancel">Cancelar</string>
     <string name="settings">Ajustes</string>
     <string name="backup_save_sum">Hacer una copia de seguridad de la tarjeta de memoria al guardar?</string>
@@ -26,6 +28,7 @@
     <string name="about">Acerca de</string>
     <string name="about_text">GitHub tenedor Por: Topher Lee</string>
     <string name="about_sum">Toque para README</string>
+    <string name="readme">README</string>
     <string name="region">Región:</string>
     <string name="save_id">Identificación del Guardar:</string>
     <string name="ok">Bueno</string>
@@ -45,10 +48,11 @@
     <string name="pref_emu">Preferred Emulator</string>
     <string name="retroarch">RetroArch</string>
     <string name="back_to_exit">Press Back Again to Exit</string>
-    <string name="mail">Email us Feedback</string>
-	<string name="wallpaper_sum">Wallpaper</string>
-	<string name="wallpaper_text">Uncheck to hide default wallpaper for better readability.</string>
-	<string name="wallpaper_hide">Wallpaper disable</string>
-	<string name="contact_developer">Contact Developer</string>
+    <string name="feedback">Feedback</string>
+    <string name="wallpaper_sum">Wallpaper</string>
+    <string name="wallpaper_text">Uncheck to hide default wallpaper for better readability.</string>
+    <string name="wallpaper_hide">Wallpaper disable</string>
+    <string name="contact_developer">Contact Developer</string>
+    <string name="file_ext_error">Missing or Incorrect File Extension</string>
 
 </resources>

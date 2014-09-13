@@ -6,6 +6,7 @@ public class Statics {
 	static boolean changed = false;
 	static boolean backup = true;
 	static boolean export = true;
+	static boolean about = false;
 	static int exportFmt = 0;
 	static String defaultPath = null;
 	

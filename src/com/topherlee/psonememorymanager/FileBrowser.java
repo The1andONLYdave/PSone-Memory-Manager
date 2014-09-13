@@ -132,7 +132,7 @@ public class FileBrowser extends ListActivity {
 	                                		int extOfs = file.getName().lastIndexOf(".");
 	                                		if(extOfs==-1){//we have no occurance of "." here
 							  		//TOAST: filename doesn't contain '.' or have no extension(.mcd for example), please select different file or rename it before!
-									Toast.makeText(getApplicationContext(), "filename doesn't contain '.' or have no extension(.mcd for example), please select different file or rename it before!", Toast.LENGTH_LONG).show();
+									Toast.makeText(getApplicationContext(), "Missing or Incorrect File Extension", Toast.LENGTH_LONG).show();
 										}
 									else if(extOfs != 0){
 		                                		String ext = file.getName().substring(extOfs, file.getName().length());          

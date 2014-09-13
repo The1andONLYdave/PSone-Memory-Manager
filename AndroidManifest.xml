@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.topherlee.psonememorymanager"
     android:installLocation="auto"
-    android:versionCode="09092014"
-    android:versionName="1.4a" >
+    android:versionCode="09112014"
+    android:versionName="1.4.1" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -37,6 +37,7 @@
             android:screenOrientation="landscape" />
         <activity
             android:name="com.topherlee.psonememorymanager.FileBrowser"
+            android:icon="@drawable/ic_action_collection"
             android:label="@string/file_browser"
             android:screenOrientation="landscape" />
         <activity
@@ -54,9 +55,19 @@
             android:screenOrientation="landscape" />
         <activity
             android:name="com.topherlee.psonememorymanager.Prefs"
+            android:icon="@drawable/ic_action_settings"
+            android:label="@string/settings"
             android:screenOrientation="landscape" />
+        <!--
+              <activity
+            android:name="com.topherlee.psonememorymanager.About"
+            android:icon="@drawable/ic_action_about"
+            android:label="@string/readme"
+            android:screenOrientation="landscape" />
+        -->
         <activity
             android:name="com.topherlee.psonememorymanager.EditHeader"
+            android:label="@string/file_browser"
             android:screenOrientation="landscape" />
     </application>
 

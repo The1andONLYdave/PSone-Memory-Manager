@@ -44,6 +44,14 @@ public class Prefs extends PreferenceActivity {
     	}
     	else
     		Statics.exportFmt = 0;
+    	Boolean about = (Boolean) preferences.get("aboutPref");
+    	if(about==null||about==true){
+    		Statics.about = true;
+    		WebView myWebView = (WebView) findViewById(R.id.webview);
+    		myWebView.loadUrl("https://github.com/TopherLee513/PSone-Memory-Manager/blob/master/README.md");
+    	}
+    	else
+    		Statics.about = false;
 
 		super.onPause();
 	}

@@ -20,19 +20,21 @@
     <item
         android:id="@+id/prefs"
         android:icon="@drawable/ic_action_settings"
-        android:title="@string/settings"
-        android:showAsAction="never"/>
-     <item
-        android:id="@+id/mail"
-        android:icon="@drawable/ic_action_about"
-        android:title="@string/mail"/>
-      <item
+        android:showAsAction="never"
+        android:title="@string/settings"/>
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_action_new_email"
+        android:title="@string/feedback"/>
+    <item
         android:id="@+id/togglebackground"
         android:icon="@drawable/ic_action_about"
         android:title="@string/wallpaper_hide"/>
-    <!--<item
+    <!--
+        <item
         android:id="@+id/exit"
         android:icon="@drawable/ic_action_cancel"
-        android:title="@string/exit"/>
--->
+        android:title="@string/exit"/>
+    -->
+
 </menu>

@@ -37,7 +37,7 @@ public class MCTabsWidget extends TabActivity {
 	 Intent intent;
 	 int totalTabs;
 	 int count = 0;
-	 int bg = 1;
+	 boolean bg = true;
 	 
 	  @Override
 	     public void onBackPressed()
@@ -49,7 +49,7 @@ public class MCTabsWidget extends TabActivity {
 	    	
 	    	if(count==0)
 	    	{
-	    		Toast.makeText(getApplicationContext(),("Press again to exit app"), Toast.LENGTH_SHORT).show();
+	    		Toast.makeText(getApplicationContext(),("Press again to exit"), Toast.LENGTH_SHORT).show();
 	    		count++;
 	    		return;
 	    	}
@@ -167,11 +167,11 @@ public class MCTabsWidget extends TabActivity {
 	    				String fn = intent.getStringExtra("com.topherlee.psonememorymanager.FN");
 	    	    		if(fn!=null){
 	    	    			try {
-	    	    					File outFile = new File(fn+"/"+value+".mcd");
+	    	    					File outFile = new File(fn+"/"+value+".mcr");
 	    	    					
 	    	    						outFile.createNewFile();
 	    	    				    	    		    		    	    				
-    	    						FileOutputStream out = new FileOutputStream(fn+"/"+value+".mcd");
+    	    						FileOutputStream out = new FileOutputStream(fn+"/"+value+".mcr");
     	    						InputStream in = getApplicationContext().getResources().openRawResource(R.raw.blank_card);
     	    						BufferedOutputStream dest = new BufferedOutputStream(out, 0x1FFFE);
     	    						byte[] buffer = new byte[0x1FFFE];
@@ -186,7 +186,7 @@ public class MCTabsWidget extends TabActivity {
     	    						tablist.remove(curTab);
     	    						tabHost.setCurrentTab(0);
     	    						tabHost.clearAllTabs();
-    	    						passedFN = fn+"/"+value+".mcd";  			
+    	    						passedFN = fn+"/"+value+".mcr";  			
     	    						intent = new Intent().setClass(getApplicationContext(), MCViewActivity.class);
     	    						intent.putExtra("com.topherlee.psonememorymanager.FN", passedFN);
     	    						intent.putExtra("tabid", curTab);
@@ -265,22 +265,22 @@ public class MCTabsWidget extends TabActivity {
         	Intent i = new Intent().setClass(getApplicationContext(), Prefs.class);
         	startActivityForResult(i, 65532);
         	return true;
-        case R.id.mail: //starting mail program and filling some defaults. English, no <string> at the moment.
+        case R.id.feedback: //starting mail program and filling some defaults. English, no <string> at the moment.
         	StringBuffer buffer = new StringBuffer();
         	buffer.append("mailto:");
-        	buffer.append("feedback-psonememorymanger@kulsch-it.de");
+        	buffer.append(getString (R.string.email));
             buffer.append("?subject=");
-           	buffer.append("Feedback");
+           	buffer.append(getString (R.string.feedback));
           	buffer.append("&body=");
           	buffer.append("Android Version:?\n Device-Model:?\nYour Message:");
            	String uriString = buffer.toString().replace(" ", "%20");
         		 startActivity(Intent.createChooser(new Intent(Intent.ACTION_SENDTO, Uri.parse(uriString)), (getString (R.string.contact_developer))));
         		      return true;
          case R.id.togglebackground:
-        		        	//if(bg==0){tabHost.setBackgroundResource(R.drawable.background);bg=1;}
-        		        	// else { 
-        		        	tabHost.setBackgroundResource(0);//bg=0;}
-        		 			return true;
+        		if(bg==false){tabHost.setBackgroundResource(R.drawable.background);bg=true;}
+        		else { 
+        		tabHost.setBackgroundResource(0);bg=false;}
+        		return true;
         // case R.id.about:
         default:
             return super.onOptionsItemSelected(item);

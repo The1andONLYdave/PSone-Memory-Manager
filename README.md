@@ -4,9 +4,6 @@
 |         By: TopherLee513 and David-Lee Kulsch                  |
 |      http://github.com/TopherLee513/PSone-Memory-Manager       |
 |      eMail: topher.lee.13@gmail.com                            |
-|      https://github.com/The1andONLYdave/PSone-Memory-Manager   |
-|      based on work by neko68k                                  |
-|      (http://github.com/neko68k/PSX-MC-Manager)                |
 ------------------------------------------------------------------
 |         License: GPLv3 (GNU_GPLv3.txt)      |
 -----------------------------------------------
@@ -21,8 +18,18 @@ Checkout his Github @: https://github.com/The1andONLYdave
 I hope to add things like:
 An about page to see the README while in-app
 Google Play Link to RetroArch (Recommended Emulator)
+Move Background Toggle into settings (WIP)
+I'd also like to try to implement saving/syncing cards with Google Drive
 
 Changelog:
+(09.11.2014)
+-Ver 1.4.1
+-Incorporated Google Play Link to RetroArch (David-Lee Kulsch)
+-Added RetroArch icon to link
+-Changed "mail" strings and ID to simply "feedback"
+-Finally merged German strings.xml (manually)
+-More work on strings.xml
+
 (09.09.2014)
 -Ver 1.4
 -Incorporated more code by David-Lee Kulsch
@@ -62,3 +69,10 @@ Changelog:
 -added raw/blank_card
 -added this README and GNU_GPLv3
 -Edited strings.xml
+
+------------------------------------------------------------------
+|     David-Lee Kulsch
+|      https://github.com/The1andONLYdave/PSone-Memory-Manager   |
+|      based on work by neko68k                                  |
+|      (http://github.com/neko68k/PSX-MC-Manager)                |
+------------------------------------------------------------------

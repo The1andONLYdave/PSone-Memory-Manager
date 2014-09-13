@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Playstation Memorykarten Manager</string>
+    <string name="email">feedback-psonememorymanger@kulsch-it.de</string>
+    <string name="file_browser">Dateimanager</string>
+    <string name="up_one_level">..</string>
+    <string name="current_dir">.</string>
+    <string name="nomc">Keine Memorykarte geladen</string>
+    <string name="memory_low">Nicht genügend Speicherplatz.</string>
+    <string name="saveid_lic">Save IDs müssen einzigartig zum License code sein. Bitte nach dem Kopieren ändern.</string>
+    <string name="copied">Kopiert </string>
+    <string name="enter_filename">( Neuen Dateinamen eingeben )</string>
+    <string name="open">Öffnen</string>
+    <string name="save">Speichern</string>
+    <string name="create">Neu</string>
+    <string name="exit">Beenden</string>
+    <string name="close_application">Schliesse App</string>
+    <string name="settings">Einstellungen</string>
+    <string name="backup_save_sum">Sicherungskopie der Memorykarte beim speichern erstellen?</string>
+    <string name="backup_save_text">Backup bei speichern?</string>
+    <string name="convert_save_sum">In bevorzugtes Format umwandeln beim Speichern? DexDrive Format(.gme) ignoriert diese Einstellung und wird immer in das bevorzugte Format umgewandelt.</string>
+    <string name="convert_save_text">Umwandeln bei speichern?</string>
+    <string name="pref_format_text">Bevorzugtes Format</string>
+    <string name="pref_format_sum">Wähle das bevorzugte Format beim umwandeln.</string>
+    <string name="about">Über</string>
+    <string name="about_text">Topher Lee und David-Lee Kulsch:</string>
+    <string name="about_sum">(Tap for README)</string>
+    <string name="readme">README</string>
+    <string name="region">Region:</string>
+    <string name="save_id">Save ID:</string>
+    <string name="ok">Okay</string>
+    <string name="prod_id">Product ID:</string>
+    <string name="search">Suche</string>
+    <string name="edit_details">Editiere Details</string>
+    <string name="copy">Kopiere</string>
+    <string name="delete">Lösche</string>
+    <string name="restore">Wiederherstellen</string>
+    <string name="no_link">Kann die direkt verknüpften Blöcke nicht löschen.</string>
+    <string name="restore_success">Erfolgreich Wiederhergestellt .</string>
+    <string name="restore_failed">Konnte nicht wiederherstellen .</string>
+    <string name="long_press">Lange drücken um Verzeichnis auszuwählen</string>
+    <string name="cant_edit_linked_blocks">Kann die verknüpften Blöcke nicht bearbeiten.</string>
+    <string name="empty_block">Dieser Block/Bereich ist leer.</string>
+    <string name="feedback">Feedback</string>
+    <string name="wallpaper_sum">Hintergrundbild wechseln</string>
+    <string name="wallpaper_text">Abwählen um Hintergrundbild auszublenden für bessere Lesbarkeit.</string>
+    <string name="wallpaper_hide">Hintergrundbild ausblenden</string>
+    <string name="saved_slot">Speicher Slot</string>
+    <string name="pref_emu">Bevorzugter Emulator</string>
+    <string name="retroarch">RetroArch</string>
+    <string name="back_to_exit">Drücke erneut zurück zum Beenden</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="contact_developer">Contact Developer</string>
+    <string name="file_ext_error">Missing or Incorrect File Extension</string>
+
+</resources>
