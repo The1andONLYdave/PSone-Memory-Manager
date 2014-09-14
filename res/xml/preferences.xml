@@ -26,7 +26,41 @@
             android:key="wallpaperPref"
             android:summary="@string/wallpaper_text"
             android:title="@string/wallpaper_sum" /> -->
-    <PreferenceCategory
+ <PreferenceCategory
+        android:title="More usefull stuff(scroll down please!)" >
+ 
+   <Preference
+ android:title="Install RetroArch"
+ android:key="View RetroArch in Google Play">
+ 
+ <intent
+ android:action="android.intent.action.VIEW"
+ android:data="market://details?id=com.retroarch"
+ />
+ 
+ </Preference>
+<Preference
+ android:title="Rate this app"
+ android:key="Click for opening Google Play-Page">
+ 
+ <intent
+ android:action="android.intent.action.VIEW"
+ android:data="market://details?id=com.dlka.psonememorymanager"
+ />
+ 
+ </Preference>
+<Preference
+ android:title="Donate"
+ android:key="Would be glad if you have some money for us">
+ 
+ <intent
+ android:action="android.intent.action.VIEW"
+ android:data="@string/donatelink"
+ />
+ 
+ </Preference>
+</PreferenceCategory> 
+<PreferenceCategory
         android:summary="@string/about_sum"
         android:title="@string/about_text" >
         <Preference

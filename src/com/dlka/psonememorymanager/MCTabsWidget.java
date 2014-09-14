@@ -21,7 +21,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
@@ -291,8 +291,9 @@ public class MCTabsWidget extends TabActivity {
     		mcl.save();
     		Toast.makeText(getApplicationContext(), "Saved slot "+(tabHost.getCurrentTab()+1)+".", Toast.LENGTH_SHORT).show();
     		TabWidget vTabs = getTabWidget();
-    		RelativeLayout rLayout = (RelativeLayout) vTabs.getChildAt(tabHost.getCurrentTab());
-    		((TextView) rLayout.getChildAt(1)).setText(mcl.getDir());
+    		//RelativeLayout rLayout = (RelativeLayout) vTabs.getChildAt(tabHost.getCurrentTab());
+    		LinearLayout lLayout = (LinearLayout) vTabs.getChildAt(tabHost.getCurrentTab());
+    		((TextView) lLayout.getChildAt(1)).setText(mcl.getDir());
     		Statics.cards[tabHost.getCurrentTab()] = mcl;
     		return true;	 
 //TopherLee added; //moved by David-Lee Kulsch
