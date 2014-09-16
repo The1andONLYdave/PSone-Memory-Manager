@@ -29,6 +29,7 @@
     <string name="about_text">GitHub tenedor Por: Topher Lee</string>
     <string name="about_sum">Toque para README</string>
     <string name="readme">README</string>
+    <string name="readme_link">https://github.com/TopherLee513/PSone-Memory-Manager/blob/master/README.md</string>
     <string name="region">Región:</string>
     <string name="save_id">Identificación del Guardar:</string>
     <string name="ok">Bueno</string>
@@ -54,5 +55,11 @@
     <string name="wallpaper_hide">Wallpaper disable</string>
     <string name="contact_developer">Contact Developer</string>
     <string name="file_ext_error">Missing or Incorrect File Extension</string>
+    <string name="other">Other</string>
+    <string name="donate">Donate via PayPal™</string>
+    <string name="donate_link">http://bit.ly/donateForApp</string>
+    <string name="rate">Rate Application</string>
+    <string name="google_play">Google Play™</string>
+    <string name="rate_link">market://details?id=com.dlka.psonememorymanager</string>
 
 </resources>

@@ -27,6 +27,7 @@
     <string name="about_text">Topher Lee und David-Lee Kulsch:</string>
     <string name="about_sum">(Tap for README)</string>
     <string name="readme">README</string>
+    <string name="readme_link">https://github.com/TopherLee513/PSone-Memory-Manager/blob/master/README.md</string>
     <string name="region">Region:</string>
     <string name="save_id">Save ID:</string>
     <string name="ok">Okay</string>
@@ -51,7 +52,14 @@
     <string name="retroarch">RetroArch</string>
     <string name="back_to_exit">Drücke erneut zurück zum Beenden</string>
     <string name="cancel">Abbrechen</string>
+    <!-- Needs Translated -->
     <string name="contact_developer">Contact Developer</string>
     <string name="file_ext_error">Missing or Incorrect File Extension</string>
+    <string name="other">Other</string>
+    <string name="donate">Donate via PayPal™</string>
+    <string name="donate_link">http://bit.ly/donateForApp</string>
+    <string name="rate">Rate Application</string>
+    <string name="google_play">Google Play™</string>
+    <string name="rate_link">market://details?id=com.dlka.psonememorymanager</string>
 
 </resources>

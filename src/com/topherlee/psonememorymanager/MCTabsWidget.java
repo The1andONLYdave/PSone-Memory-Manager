@@ -21,7 +21,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
@@ -226,7 +226,6 @@ public class MCTabsWidget extends TabActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_activity_actions, menu);
-        //inflater.inflate(R.menu.menu, menu);
         return true;
     }
     
@@ -257,31 +256,37 @@ public class MCTabsWidget extends TabActivity {
     		mcl.save();
     		Toast.makeText(getApplicationContext(), getString (R.string.saved_slot)+" "+(tabHost.getCurrentTab()+1)+".", Toast.LENGTH_SHORT).show();
     		TabWidget vTabs = getTabWidget();
-    		RelativeLayout rLayout = (RelativeLayout) vTabs.getChildAt(tabHost.getCurrentTab());
-    		((TextView) rLayout.getChildAt(1)).setText(mcl.getDir());
+    		//DLK
+    		LinearLayout lLayout = (LinearLayout) vTabs.getChildAt(tabHost.getCurrentTab());
+    		((TextView) lLayout.getChildAt(1)).setText(mcl.getDir());
+    	    //
     		Statics.cards[tabHost.getCurrentTab()] = mcl;
-    		return true;	 
+    		return true;
+//TopherLee added; //moved by David-Lee Kulsch
+       case R.id.exit:	
+       super.onBackPressed();
+       return true;//finish(); //still won't work, so removing temporary from preferencescreen
+//(TL)	
         case R.id.prefs:
         	Intent i = new Intent().setClass(getApplicationContext(), Prefs.class);
         	startActivityForResult(i, 65532);
         	return true;
-        case R.id.feedback: //starting mail program and filling some defaults. English, no <string> at the moment.
+        case R.id.feedback: //starting mail program and filling some defaults. English, no <string> at the moment.//(TL)Added a couple strings
         	StringBuffer buffer = new StringBuffer();
         	buffer.append("mailto:");
         	buffer.append(getString (R.string.email));
             buffer.append("?subject=");
            	buffer.append(getString (R.string.feedback));
           	buffer.append("&body=");
-          	buffer.append("Android Version:?\n Device-Model:?\nYour Message:");
+          	//buffer.append("Android Version:?\n Device-Model:?\nYour Message:");//(TL)
            	String uriString = buffer.toString().replace(" ", "%20");
         		 startActivity(Intent.createChooser(new Intent(Intent.ACTION_SENDTO, Uri.parse(uriString)), (getString (R.string.contact_developer))));
         		      return true;
-         case R.id.togglebackground:
+         case R.id.togglebackground://(TL)changed to boolean
         		if(bg==false){tabHost.setBackgroundResource(R.drawable.background);bg=true;}
         		else { 
         		tabHost.setBackgroundResource(0);bg=false;}
         		return true;
-        // case R.id.about:
         default:
             return super.onOptionsItemSelected(item);
         }
