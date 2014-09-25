@@ -104,7 +104,7 @@ public class FileBrowser extends ListActivity {
                         e1.printStackTrace();
                 }
                 //UNCOMMENTED (TL)
-                //this.directoryEntries.add(".");
+                this.directoryEntries.add(".");
                
                 if(this.currentDirectory.getParent() != null)
                         this.directoryEntries.add("..");
