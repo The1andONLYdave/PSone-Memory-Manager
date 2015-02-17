@@ -104,7 +104,7 @@ ________________________________________________________________________________
 *https://github.com/The1andONLYdave/PSone-Memory-Manager
 
 **Memory Card Icon:**
-*http://upload.wikimedia.org/wikipedia/commons/c/cb/Memory_Card_for_PlayStation.jpg
+*http://th00.deviantart.net/fs71/200H/f/2014/032/8/e/sony_playstation_memory_card_by_blueamnesiac-d74nkp3.png
 
 **PSX Motherboard:**
 *http://upload.wikimedia.org/wikipedia/commons/a/a3/PSX_mainboard.jpg
