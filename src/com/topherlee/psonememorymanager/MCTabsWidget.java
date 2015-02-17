@@ -49,7 +49,7 @@ public class MCTabsWidget extends TabActivity {
 	    	
 	    	if(count==0)
 	    	{
-	    		Toast.makeText(getApplicationContext(),("Press again to exit"), Toast.LENGTH_SHORT).show();//String crashes app
+	    		Toast.makeText(getApplicationContext(),getString (R.string.back_to_exit), Toast.LENGTH_SHORT).show();
 	    		count++;
 	    		return;
 	    	}
@@ -265,7 +265,7 @@ public class MCTabsWidget extends TabActivity {
 //TopherLee added; //moved by David-Lee Kulsch
        case R.id.exit:	
        super.onBackPressed();
-       return true;//finish(); //still won't work, so removing temporary from preferencescreen
+       return true;//finish();
 //(TL)	
         case R.id.prefs:
         	Intent i = new Intent().setClass(getApplicationContext(), Prefs.class);
