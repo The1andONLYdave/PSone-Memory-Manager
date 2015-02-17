@@ -3,7 +3,7 @@
     package="com.topherlee.psonememorymanager"
     android:installLocation="auto"
     android:versionCode="02162015"
-    android:versionName="1.4.4(BETA)" >
+    android:versionName="1.4.4" >
 
     <uses-sdk
         android:minSdkVersion="16"
