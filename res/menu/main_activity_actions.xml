@@ -30,7 +30,7 @@
     <item
         android:id="@+id/togglebackground"
         android:icon="@drawable/ic_action_about"
-        android:title="@string/wallpaper_hide"/>
+        android:title="@string/backg_toggle"/>
     <item
         android:id="@+id/exit"
         android:icon="@drawable/ic_action_cancel"

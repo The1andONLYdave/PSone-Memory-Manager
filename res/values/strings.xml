@@ -1,24 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name">PSone Memory Manager</string>
+    <!-- General -->
+    <string name="app_name">PSone Memory Manager (BETA)</string>
     <string name="email">topher.lee.13@gmail.com</string>
-    <string name="file_browser">File Browser</string>
-    <string name="up_one_level">..</string>
-    <string name="current_dir">.</string>
     <string name="ok">Okay</string>
-    <string name="nomc">No Card Loaded in Slot</string>
-    <string name="saved_slot">Saved Slot</string>
+    <string name="cancel">Cancel</string>
+    <string name="back_to_exit">Press Again to Exit</string>
+    <!-- Errors -->
+    <string name="nomc">No Card Loaded</string>
+    <string name="in_slot">in Slot</string>
     <string name="memory_low">Not enough space on memory.</string>
+    <string name="file_ext_error">Missing or Incorrect File Extension</string>
+    <!-- File Browser -->
+    <string name="file_browser">File Browser</string>
+    <string name="up_one_level">  ..  </string>
+    <string name="current_dir">.</string>
+    <string name="enter_filename">Enter New Filename</string>
+    <string name="long_press">Long Press To Select Folder</string>
+    <string name="saved_slot">Saved Slot</string>
     <string name="saveid_lic">Save IDs must be unique to License code. Please change it after the copy completes.</string>
-    <string name="copied">Copied </string>
-    <string name="enter_filename">( Enter New Filename )</string>
+
+    <!-- Action Bar -->
     <string name="open">Open</string>
     <string name="save">Save</string>
-    <string name="create">New</string>
+    <string name="create">Create</string>
+    <string name="feedback">Feedback</string>
+    <string name="backg_toggle">Toggle Background</string>
+    <string name="orientation_toggle">Toggle Orientation</string>
     <string name="exit">Exit</string>
-    <string name="close_application">Close App</string>
-    <string name="cancel">Cancel</string>
+    <string name="close_app">Closing "@string/app_name"</string>
+    <string name="contact_developer">Contact Developer</string>
+    <!-- Settings -->
     <string name="settings">Settings</string>
     <string name="backup_save_sum">Make a backup of the memory card when saving?</string>
     <string name="backup_save_text">Backup on Save</string>
@@ -26,39 +39,45 @@
     <string name="convert_save_text">Convert to preferred format on save? </string>
     <string name="pref_format_text">Preferred format</string>
     <string name="pref_format_sum">Select the preferred conversion format.</string>
+    <string name="mcr">psx4droid(.mcr)</string>
+    <string name="mcd">FPSeCe(.mcd)</string>
+    <string name="theme_title">Theme</string>
+    <string name="theme_sum">Change the App Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="backg_sum">Wallpaper</string>
+    <string name="backg_title">Select your own background</string>
     <string name="about">About</string>
-    <string name="about_text">GitHub fork By: Topher Lee and David-Lee Kulsch</string>
+    <string name="about_text">GitHub fork By: Topher Lee</string>
     <string name="about_sum">(Tap for README)</string>
     <string name="readme">README</string>
     <string name="readme_link">https://github.com/TopherLee513/PSone-Memory-Manager/blob/master/README.md</string>
-    <string name="region">Region:</string>
-    <string name="save_id">Save ID:</string>
-    <string name="prod_id">Product ID:</string>
-    <string name="search">Search</string>
-    <string name="edit_details">Edit Details</string>
-    <string name="copy">Copy</string>
-    <string name="delete">Delete</string>
-    <string name="restore">Restore</string>
-    <string name="no_link">Cannot directly delete linked blocks.</string>
-    <string name="restore_success">Successfully Restored.</string>
-    <string name="restore_failed">Could Not Restore.</string>
-    <string name="long_press">Long Press To Select Folder</string>
-    <string name="cant_edit_linked_blocks">Cannot edit linked blocks.</string>
-    <string name="empty_block">This Block is Empty.</string>
-    <string name="back_to_exit">Press Back Again to Exit</string>
-    <string name="feedback">Feedback</string>
-    <string name="pref_emu">Preferred Emulator</string>
-    <string name="retroarch">RetroArch</string>
-    <string name="wallpaper_sum">Wallpaper</string>
-    <string name="wallpaper_text">Uncheck to hide default wallpaper for better readability.</string>
-    <string name="wallpaper_hide">Toggle Background</string>
-    <string name="contact_developer">Contact Developer</string>
-    <string name="file_ext_error">Missing or Incorrect File Extension</string>
     <string name="other">Other</string>
     <string name="donate">Donate via PayPal™</string>
     <string name="donate_link">http://bit.ly/donateForApp</string>
     <string name="rate">Rate Application</string>
     <string name="google_play">Google Play™</string>
     <string name="rate_link">market://details?id=com.dlka.psonememorymanager</string>
+    <string name="pref_emu">Preferred Emulator</string>
+    <string name="retroarch">RetroArch</string>
+    <string name="search">Search</string>
+    <!-- Card Menu -->
+    <string name="edit_details">Edit Details</string>
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="restore">Restore</string>
+    <string name="region">Region:</string>
+    <string name="save_id">Save ID:</string>
+    <string name="prod_id">Product ID:</string>
+    <string name="copied">Copied </string>
+    <string name="cant_edit_linked_blocks">Cannot edit linked blocks.</string>
+    <string name="no_link">Cannot directly delete linked blocks.</string>
+    <string name="restore_success">Successfully Restored.</string>
+    <string name="restore_failed">Could Not Restore.</string>
+    <!-- Region -->
+    <string name="america">America</string>
+    <string name="japan">Japan</string>
+    <string name="europe">Europe</string>
+    <string name="empty_block">This Block is Empty.</string>
 
 </resources>

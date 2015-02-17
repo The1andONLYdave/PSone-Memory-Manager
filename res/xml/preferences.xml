@@ -4,7 +4,7 @@
     <ListPreference
         android:defaultValue="0"
         android:entries="@array/listFormat"
-        android:entryValues="@array/listFormatVal"
+        android:entryValues="@array/listFormatVals"
         android:key="formatPref"
         android:summary="@string/pref_format_sum"
         android:title="@string/pref_format_text" />

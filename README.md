@@ -15,16 +15,20 @@ Disclaimer: The authors of this app are not responsible for any damage to your d
 German Translation and more by: David-Lee Kulsch (The1andONLYdave)
 
 #I hope to add things like:
-*Google Play Link to RetroArch (Works, but Crashes app)
 *Move Background Toggle into settings (WIP)
 *saving/syncing cards with Google Drive
 *LongPress on Tab trigger open screen
 *I'll either change the icon, or include an option to change it.
 
 #Changelog:
+**(02.16.2015)**
+**-Ver 1.4.4**
+*Adjusted some strings
+*Removed Translations and Hi-Res drawables, I'll figure out how to make add-on packs.
+*Changed Icon
 
-**(09.16.2014)**
-**-Ver 1.4.3**
+(09.16.2014)
+*Ver 1.4.3
 *David's change to LinearLayout
 *Change Icon to icon2.png (Maybe Temporary)
 *Added Play Store icon to feedback button
@@ -110,6 +114,7 @@ ________________________________________________________________________________
 
 **RetroArch Icon from Github repo.**
 *https://github.com/libretro/RetroArch/tree/master/android/phoenix
+
 **Github Icon from Github's own Android App repo.**
 *https://github.com/github/android.git
 
