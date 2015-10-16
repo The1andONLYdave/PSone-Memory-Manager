@@ -1,6 +1,5 @@
 *.class
 *~
-DEADJOE
 .#*
 *.jar
 *.zip
@@ -17,3 +16,7 @@ build.xml
 assets/build.properties
 .settings/
 .settings/*
+.DS_Store
+.settings
+libs
+build

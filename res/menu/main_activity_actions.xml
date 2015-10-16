@@ -15,13 +15,22 @@
         android:icon="@drawable/ic_action_save"
         android:showAsAction="ifRoom"
         android:title="@string/save"/>
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_action_new_email"
+        android:showAsAction="ifRoom"
+        android:title="@string/feedback"/>
 
     <!-- Settings, should always be in the overflow -->
     <item
         android:id="@+id/prefs"
-        android:title="@string/settings"
-        android:icon="@drawable/ic_action_settings"/>
-    <!-- android:showAsAction="never" -->
+        android:icon="@drawable/ic_action_settings"
+        android:showAsAction="never"
+        android:title="@string/settings"/>
+    <item
+        android:id="@+id/togglebackground"
+        android:icon="@drawable/ic_action_about"
+        android:title="@string/backg_toggle"/>
     <item
         android:id="@+id/mail"
         android:icon="@drawable/ic_action_about"
@@ -33,6 +42,7 @@
     <item
         android:id="@+id/exit"
         android:icon="@drawable/ic_action_cancel"
+        android:showAsAction="never"
         android:title="@string/exit"/>
 
 </menu>

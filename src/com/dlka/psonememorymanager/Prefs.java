@@ -2,21 +2,43 @@ package com.dlka.psonememorymanager;
 
 import java.util.Map;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+<<<<<<< HEAD:src/com/dlka/psonememorymanager/Prefs.java
+=======
+import android.support.v4.app.NavUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.webkit.WebView;
+
+import com.topherlee.psonememorymanager.R;
+>>>>>>> TopherLee513/master:src/com/topherlee/psonememorymanager/Prefs.java
 
 public class Prefs extends PreferenceActivity {
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.preferences);            
-                        
+            getActionBar().setDisplayHomeAsUpEnabled(true);//Up Navigation           
             setResult(RESULT_OK);
             
     }
-	
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	    // Respond to the action bar's Up/Home button
+	    case android.R.id.home:
+	        NavUtils.navigateUpFromSameTask(this);
+	    }
+	    return super.onOptionsItemSelected(item);
+	}
+
 	@Override
 	protected void onPause(){
 		Map<String, ?> preferences;
@@ -41,17 +63,7 @@ public class Prefs extends PreferenceActivity {
     	}
     	else
     		Statics.exportFmt = 0;
-    	String about_text = (String) preferences.get("aboutPref");
-    	if (about_text !=null){
-    		
-    	}
-    	/*	WebView myWebView = (WebView) findViewById(R.id.webview);
-		    myWebView.setWebViewClient(new WebViewClient());
-    		myWebView.loadUrl("http://github.com/TopherLee513/PSone-Memory-Manager");*/
-    	String exit = (String) preferences.get("exitPref");
-    	if (exit !=null){
-    		
-    	}
+
 		super.onPause();
 	}
 	

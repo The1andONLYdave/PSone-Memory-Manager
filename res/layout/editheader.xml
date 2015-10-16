@@ -3,15 +3,10 @@
     android:id="@+id/editheader"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-<<<<<<< HEAD
-    android:background="@drawable/background" 
-    >
-=======
     android:background="@drawable/background"
     android:icon="@drawable/ic_action_settings"
     android:label="@string/settings" >
     />
->>>>>>> TopherLee513/master
 
     <Button
         android:id="@+id/button1"
