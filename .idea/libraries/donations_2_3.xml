@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="donations-2.3">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/org.sufficientlysecure/donations/2.3/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/org.sufficientlysecure/donations/2.3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sufficientlysecure/donations/2.3/95f260a4df6675bdfe02395b2ba2757d90d57ffc/donations-2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="listFormat">
+        <item>@string/mcr</item>
+        <item>@string/mcd</item>
+    </string-array>
+    <string-array name="listFormatVals">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="listRegion">
+        <item>@string/america</item>
+        <item>@string/japan</item>
+        <item>@string/europe</item>
+    </string-array>
+    <string-array name="listRegionVals">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="listThemeVals">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="listCardMenu">
+        <item>"@string/edit_details"</item>
+        <item>"@string/copy"</item>
+        <item>"@string/delete"</item>
+        <item>"@string/restore"</item>
+    </string-array>
+
+</resources>

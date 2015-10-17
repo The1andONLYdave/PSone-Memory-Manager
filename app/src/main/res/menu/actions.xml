@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_action_new_email"
+        android:title="@string/feedback" />
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/prefs"
+        android:icon="@drawable/ic_action_settings"
+        android:showAsAction="never"
+        android:title="@string/settings" />
+
+</menu>
