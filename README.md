@@ -2,8 +2,8 @@
 |         PSone Memory Manager (Android™)         |
 ------------------------------------------------------------------
 |         By: TopherLee513 and David-Lee Kulsch                  |
-|      http://github.com/The1andONLYdave/PSone-Memory-Manager       |
-|      eMail: topher.lee.13@gmail.com                            |
+|      http://github.com/The1andONLYdave/PSone-Memory-Manager    |
+|      eMail: the1andonlydave@gmail.com                          |
 ------------------------------------------------------------------
 |         License: GPLv3 (GNU_GPLv3.txt)      |
 -----------------------------------------------
@@ -12,7 +12,7 @@ Description: This app allows you to create/edit/convert memory card files for us
 
 Disclaimer: The authors of this app are not responsible for any damage to your device or save files. This code is a work in progress so USE AT YOUR OWN RISK.
 
-Commits and changes by Topher Lee (TopherLee513), thanks for helping :)
+Commits and changes by Topher Lee http://topherlee513.github.io/PSone-Memory-Manager/ , thanks for helping :)
 
 (2015/10/17) Fully merged nearly all of Topher's Changes into Fork and reformatted codefiles and converted to Android Studio.
 
