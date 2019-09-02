@@ -1,16 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29    
+    compileSdkVersion 29
     buildToolsVersion "23.0.1"
 
     defaultConfig {
         applicationId "com.dlka.psonememorymanager"
         minSdkVersion 16
         targetSdkVersion 29
-        versionName '0.5 free'
+        versionName '0.5.1 free'
         manifestPlaceholders = [ applicationName:"PSOne-MemoryCard-Manager" ]
-        manifestPlaceholders = [ applicationCode:"10000000" ]
+        manifestPlaceholders = [ applicationCode:"10000001" ]
         buildConfigField "boolean", "IS_PRO_VERSION", "false"
         buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
 
@@ -18,9 +18,16 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
     }
 }
 
